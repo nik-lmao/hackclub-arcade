@@ -6,19 +6,28 @@
     <title>Finn's website</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
 </head>
 <body>
     <img src="images/pfp.jpg" alt="Finn" class="pfp anim-1" id="pfp" draggable="false">
     <div class="text">
-        <h1 class="title anim-2">Hey, my name is <span class="highlight">Finn</span>!</h1>
-        <p class="description anim-2">I am a <a href="https://en.wikipedia.org/wiki/German_Shepherd" class="link" target="_blank">German Shepherd</a>.</p>
+      <h1 class="title anim-2">Hey, my name is <span class="highlight">Finn</span>!</h1>
+      <p class="description anim-2 text">I am a <a href="https://en.wikipedia.org/wiki/German_Shepherd" class="link" target="_blank">German Shepherd</a>.</p>
+      <div class="location-container anim-2">
+        <span class="material-symbols-outlined">location_on</span>
+        <p class="text">Location: <a href="https://en.wikipedia.org/wiki/Traunstein" class="link">Traunstein</a>, 83278 (DE)</p>
+      </div>
+      <div class="birthday-container anim-2">
+        <span class="material-symbols-outlined">cake</span>
+        <p class="text">Birthday: <span class="highlight">05.04.2020</span></p>
+      </div>
         
-        <p class="description anim-3">I like: 💚</p>
-        <ul class="list">
-            <li class="list-item anim-4">hunting deers 🦌</li>
-            <li class="list-item anim-5">eating 🍖</li>
-            <li class="list-item anim-6">diving for rocks 💧 (<a id="rocks" class="link">click</a>)</li>
-        </ul>
+      <p class="description text anim-3">💚 I like:</p>
+      <ul class="list">
+        <li class="list-item anim-4">hunting deers 🦌</li>
+        <li class="list-item anim-5">eating 🍖</li>
+        <li class="list-item anim-6">diving for rocks 💧 (<a id="rocks" class="link">click</a>)</li>
+      </ul>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>

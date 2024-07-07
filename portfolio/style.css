@@ -1,8 +1,8 @@
 * {
     user-select: none;
-}
-
-body {
+  }
+  
+  body {
     font-family: "Montserrat";
     font-weight: normal;
     background: linear-gradient(0deg, rgb(0,0,0, 0.9), rgb(0, 0, 0));
@@ -12,104 +12,102 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-.title {
+  }
+  
+  
+  .title {
     font-size: 35px;
     font-weight: bold;
-
-    
-
-}
-
-.highlight {
+  }
+  
+  .highlight {
     color: rgb(21, 255, 0);
     text-shadow: rgb(21, 255, 0) 0px 0px 30px;
-}
-
-.link {
+  }
+  
+  .link {
     color: rgb(21, 255, 0);
     text-decoration: none;
     text-shadow: rgb(21, 255, 0) 0px 0px 15px;
     cursor: pointer;
-}
-
-
-.description {
+  }
+  
+  .description {
     font-weight: normal;
-    margin: 10px 0;
-}
-
-.pfp {
+  }
+  
+  .pfp {
     border-radius: 50%;
     width: 250px;
     height: 250px;
     margin-right: 100px;
-
     box-shadow: 0 0 100px rgba(255, 255, 255, 0.2);
-    
-}
-
-.text {
+  }
+  
+  .text {
     display: inline-block;
     font-size: 20px;
-
     animation: fadeIn 1s forwards;
     opacity: 0;
     animation-delay: 0.5s;
-}
-
-.list-item {
+    vertical-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .list-item {
     font-weight: normal;
-}
-
-@keyframes fadeIn {
+  }
+  
+  @keyframes fadeIn {
     0% {
         opacity: 0;
     }
     100% {
         opacity: 1;
     }
-    
-}
-
-.anim-1 {
+  }
+  
+  .anim-1 {
     animation: fadeIn 1s forwards;
     opacity: 0;
-}
-
-.anim-2 {
+  }
+  
+  .anim-2 {
     animation: fadeIn 1s forwards;
     opacity: 0;
     animation-delay: 0.5s;
-}
-
-.anim-3 {
+  }
+  
+  .anim-3 {
     animation: fadeIn 1s forwards;
     opacity: 0;
     animation-delay: 1s;
-}
-
-.anim-4 {
+  }
+  
+  .anim-4 {
     animation: fadeIn 1s forwards;
     opacity: 0;
     animation-delay: 1.5s;
-}
-
-.anim-5 {
+  }
+  
+  .anim-5 {
     animation: fadeIn 1s forwards;
     opacity: 0;
     animation-delay: 2s;
-}
-
-.anim-6 {
+  }
+  
+  .anim-6 {
     animation: fadeIn 1s forwards;
     opacity: 0;
     animation-delay: 2.5s;
-}
+  }
+  
+  .location-container, .birthday-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .list {
+    margin: 0;
+  }
