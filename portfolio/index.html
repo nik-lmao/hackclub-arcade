@@ -8,18 +8,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img src="profile.jpg" alt="Finn" class="pfp">
+    <img src="images/pfp.jpg" alt="Finn" class="pfp anim-1" id="pfp" draggable="false">
     <div class="text">
-        <h1 class="title">Hey, my name is <span class="highlight">Finn</span>!</h1>
-        <p class="description">I am a <a href="https://en.wikipedia.org/wiki/German_Shepherd" class="link" target="_blank">German Shepherd</a>.</p>
+        <h1 class="title anim-2">Hey, my name is <span class="highlight">Finn</span>!</h1>
+        <p class="description anim-2">I am a <a href="https://en.wikipedia.org/wiki/German_Shepherd" class="link" target="_blank">German Shepherd</a>.</p>
         
-        <p class="description">I like:</p>
+        <p class="description anim-3">I like: 💚</p>
         <ul class="list">
-            <li class="list-item">x</li>
-            <li class="list-item">y</li>
-            <li class="list-item">z</li>
+            <li class="list-item anim-4">hunting deers 🦌</li>
+            <li class="list-item anim-5">eating 🍖</li>
+            <li class="list-item anim-6">diving for rocks 💧 (<a id="rocks" class="link">click</a>)</li>
         </ul>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
