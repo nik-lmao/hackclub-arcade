@@ -103,7 +103,31 @@
     animation-delay: 2.5s;
   }
   
-  .location-container, .birthday-container {
+  .anim-7 {
+    animation: fadeIn 1s forwards;
+    opacity: 0;
+    animation-delay: 3s;
+  }
+
+  .anim-8 {
+    animation: fadeIn 1s forwards;
+    opacity: 0;
+    animation-delay: 3.5s;
+  }
+
+  .anim-9 {
+    animation: fadeIn 1s forwards;
+    opacity: 0;
+    animation-delay: 4s;
+  }
+
+  .anim-10 {
+    animation: fadeIn 1s forwards;
+    opacity: 0;
+    animation-delay: 4.5s;
+  }
+
+  .location-container, .birthday-container, .owner-container {
     display: flex;
     align-items: center;
   }
