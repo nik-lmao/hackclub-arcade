@@ -1,23 +1,43 @@
+/* Add cool scroll bar */
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: linear-gradient(0deg, rgb(0,0,0,0.4), rgb(255,255,255));
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+
 * {
-    margin: 0;
-    padding: 0;
-    text-shadow: 0 0 30px rgb(0,0,0,0.5);
+  margin: 0;
+  padding: 0;
+  text-shadow: 0 0 30px rgb(0,0,0,0.5);
+  user-select: none;
 }
   
 body {
   font-family: "Montserrat";
   font-weight: normal;
-  background-color: white;
+  background: linear-gradient(0deg, rgb(0,0,0,0.4), rgb(255,255,255));
   color: black;
 }
   
+
 .landing {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  background: linear-gradient(0deg, rgb(0,0,0,0.2), rgb(255,255,255))
 }
   
 .profile-picture {
@@ -43,7 +63,6 @@ body {
   
   
 .about {
-  background: linear-gradient(0deg, rgb(0,0,0,0.3), rgb(0,0,0,0.2));
   text-align: center;
   padding-bottom: 20px;
 }
@@ -71,13 +90,19 @@ body {
   margin: 10px;
   padding: 5px 0;
   
-  background-color: rgb(0,0,0,0.3);
-  border: 3px solid white;
+  background-color: rgba(255, 255, 255, 0.5);
+  
   border-radius: 200px;
 
-  color: white;
+  color: black;
 
-  box-shadow: 0 0 10px rgb(0,0,0,0.2);
+  box-shadow: 0 0 10px rgb(0,0,0,0.5);
+
+  transition: all 0.15s;
+}
+
+.skills > li:hover {
+  transform: scale(1.05);
 }
 
 .button {
@@ -94,9 +119,11 @@ body {
   border: 0px solid white;
   border-radius: 200px;
 
-  box-shadow: 0 0 10px rgb(0,0,0,0.2);
+  box-shadow: 0 0 10px rgb(0,0,0,0.5);
 
   transition: all 0.15s;
+
+  cursor: pointer;
 }
 
 .button:hover {
@@ -109,7 +136,6 @@ body {
 
 
 .projects {
-  background: linear-gradient(0deg, rgb(0,0,0,0.2), rgb(0,0,0,0.3));
   text-align: center;
 
 }
@@ -157,7 +183,6 @@ align-items: center;
 }
 
 .contact {
-  background: linear-gradient(0deg, rgb(0,0,0,0.3), rgb(0,0,0,0.2));
   text-align: center;
 }
 
@@ -179,9 +204,13 @@ align-items: center;
   border: 0px solid white;
   border-radius: 200px;
 
-  box-shadow: 0 0 10px rgb(0,0,0,0.2);
+  box-shadow: 0 0 10px rgb(0,0,0,0.5);
 
   transition: all 0.15s;
+}
+
+.input:hover {
+  transform: scale(1.01);
 }
 
 .input:focus {
@@ -202,7 +231,7 @@ align-items: center;
   border: 0px solid white;
   border-radius: 20px;
 
-  box-shadow: 0 0 10px rgb(0,0,0,0.2);
+  box-shadow: 0 0 10px rgb(0,0,0,0.5);
 
   transition: all 0.15s;
 
@@ -211,14 +240,18 @@ align-items: center;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.message:hover {
+  transform: scale(1.01);
+}
+
 .message:focus {
   outline: none;
   transform: scale(1.05);
 }
 
 .link {
-  color: rgb(255, 0, 0);
-  text-shadow: 0 0 30px rgb(255, 0, 0);
+  color: rgb(47, 96, 255);
+  text-shadow: 0 0 20px rgb(47, 96, 255);
   text-decoration: none;
 }
 
@@ -238,8 +271,12 @@ align-items: center;
 }
 
 .footer {
-  background: linear-gradient(0deg, rgb(0,0,0,0.4), rgb(0,0,0,0.3));
   color: white;
   text-align: center;
   padding: 20px;
+}
+
+.highlight {
+  color: rgb(72, 72, 255);
+  text-shadow: 0 0 20px rgb(72, 72, 255);
 }
