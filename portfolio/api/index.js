@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const axios = require('axios');
+const Discord = require('discord.js');
 
 const app = express();
 const port = 3000;
@@ -20,23 +21,49 @@ app.post("/contact", (req, res) => {
     const { name, email, message } = req.body;
     console.log(req.body)
 
-    if (!name || !email || !message) {
-        return res.status(400).send("Missing fields");
+    isEmail = email.includes("@") && email.includes(".");
+
+    if (!name || !email || !message || !isEmail) {
+        return res.status(400).send("Invalid data.");
+    }
+    
+    const embed = {
+        title: "New Contact Form Submission 📩",
+        color: 0x00ff00,
+        fields: [
+            {
+                name: "Name",
+                value: name
+            },
+            {
+                name: "Email",
+                value: email
+            },
+            {
+                name: "Message",
+                value: message
+            }
+        ]
     }
 
-    const payload = {
-        content: `You received a new contact form submission: \n\n**Name:** ${name}\n**Email:** ${email}\n**Message:** ${message}`
+    const data = JSON.stringify({
+        embeds: [embed]
+    });
+
+    const config = {
+        method: 'post',
+        url: webhook,
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        data: data
     };
 
-    axios.post(webhook, payload)
-        .then(response => {
-            console.log('Webhook sent successfully');
-        })
-        .catch(error => {
-            console.error('Failed to send webhook:', error);
-        });
-
-    res.status(200).send("OK");
+    axios(config).then(response => {
+        console.log('Webhook sent successfully');
+    }).catch(error => {
+        console.error('Failed to send webhook:', error);
+    });
 
 });
 

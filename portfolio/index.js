@@ -7,6 +7,8 @@ document.getElementById("contact-submit").onclick = function(){
     const email = document.getElementById("contact-email");
     const message = document.getElementById("contact-message");
 
+    // Checking validity of fields
+
     let isEmailValid = email.value.includes("@") && email.value.includes(".");
 
     if(name.value === "" || email.value === "" || message.value === "" || !isEmailValid){
@@ -26,9 +28,17 @@ document.getElementById("contact-submit").onclick = function(){
             email: email.value,
             message: message.value
         })
+    }).then (response => {
+        if(response.ok){
+            alert("Message sent successfully!");
+        } else {
+            alert("Failed to send message. Try again later.");
+        }
+    }).catch(error => {
+        alert("Failed to send message. Try again later.");
     });
 
-    alert("Message sent successfully!");
+    // REsetting form fields
 
     name.value = "";
     email.value = "";
