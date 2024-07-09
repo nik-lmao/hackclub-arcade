@@ -165,7 +165,7 @@ align-items: center;
   font-size: 16px;
   width: 70%;
   margin: auto;
-  margin-bottom: 20px;
+  
 }
 
 .input {
@@ -216,6 +216,30 @@ align-items: center;
   transform: scale(1.05);
 }
 
+.link {
+  color: rgb(255, 0, 0);
+  text-shadow: 0 0 30px rgb(255, 0, 0);
+  text-decoration: none;
+}
 
+.big-text {
+  font-size: 40px;
+}
 
 /* Add width cap (865px)*/
+
+@media screen and (max-width: 865px) {
+  
+  * > * {
+    display: none;
+  }
+  
+
+}
+
+.footer {
+  background: linear-gradient(0deg, rgb(0,0,0,0.4), rgb(0,0,0,0.3));
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
