@@ -1,11 +1,11 @@
 document.getElementById("generate").onclick = function(){
     const result = document.getElementById("result");
     const announce = document.getElementById("announce");
-    const copy = document.getElementById("copy-button")
+    const copy = document.getElementById("copy-button");
 
     var len = 8;
     var password = "";
-    const charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!._"
+    const charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!._";
 
     for(var i = 0, n = charset.length; i < len; i+=1) {
         password += charset.charAt(Math.floor(Math.random() * n));
@@ -18,10 +18,11 @@ document.getElementById("generate").onclick = function(){
 }
 
 document.getElementById("copy-button").onclick = function(){
-    const password = document.getElementById("result").innerHTML;
+    const password = document.getElementById("result").innerText;
     navigator.clipboard.writeText(password).then(function(){
-        console.log("Copied password")
-    }), function(err) {
-        alert("Could not copy password. Check console.")
-    }
+        console.log("Copied password");
+    }).catch(function(err) {
+        console.error("Could not copy password: ", err);
+        alert("Could not copy password. Check console.");
+    });
 }
