@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Nikita's simple password generator</h1>
-    <p>Press the button below to generate a password with 8 characters.</p>
-    <button id="generate" class="button">Generate Password</button>
-    <p id="announce">And your password is...</p>
-    <h2 id="result"></h2>
-    <button id="copy-button" class="button">Copy</button>
+    <div class="container">
+        <h1>Nikita's simple Password Generator</h1>
+        <p>Press the button below to generate a password with 8 characters.</p>
+        <button id="generate">Generate Password</button>
+        <p>And your password is...</p>
+        <h2 class="result-before" id="result">Loading...</h2>
+    </div>
+    
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 </body>
 </html>

@@ -1,35 +1,77 @@
 body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    background-color: rgb(255, 235, 180);
+
+    
 }
 
 
-.button {
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 50px 100px;
+    border-radius: 15px;
+    animation: fade 2s;
+}
+
+.container > h1 {
+    margin-bottom: 30px;
+}
+
+.container > p {
+    margin-bottom: 40px;
+}
+
+.container > button {
     font-size: 16px;
-
     font-weight: bold;
-
     padding: 10px;
-
-    border: 3px solid black;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
     border-radius: 500px;
-
+    box-shadow: 0 0 10px rgb(0, 0, 0);
     transition: all 0.1s;
+    cursor: pointer;
 }
 
-.button:hover {
+.container > button:hover {
     transform: scale(1.1);
 }
 
-.button:active {
+.container > button:active {
     transform: scale(1.05);
 }
 
-#announce {
-    display: none;
+
+.result-before {
+    display: block;
+    color: transparent;
 }
 
-#copy-button {
-    display: none;
+.result-after {
+    display: block;
+    height: max-content;
+    width: max-content;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 50px;
     margin: auto;
+    user-select: text;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
