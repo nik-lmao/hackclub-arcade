@@ -1,20 +1,20 @@
 def celsius_to_fahrenheit(celsius):
-  return (celsius * 9/5) + 32
+  return round((celsius * 9/5) + 32, 2)
 
 def celsius_to_kelvin(celsius):
-  return celsius + 273.15
+  return round(celsius + 273.15, 2)
 
 def fahrenheit_to_celsius(fahrenheit):
-  return (fahrenheit - 32) * 5/9
+  return round((fahrenheit - 32) * 5/9, 2)
 
 def fahrenheit_to_kelvin(fahrenheit):
-  return (fahrenheit - 32) * 5/9 + 273.15
+  return round((fahrenheit - 32) * 5/9 + 273.15, 2)
 
 def kelvin_to_celsius(kelvin):
-  return kelvin - 273.15
+  return round(kelvin - 273.15, 2)
 
 def kelvin_to_fahrenheit(kelvin):
-  return (kelvin - 273.15) * 9/5 + 32
+  return round((kelvin - 273.15) * 9/5 + 32, 2)
 
 def get_choice():
   while True:
@@ -47,11 +47,13 @@ def validate_temperature(choice, temperature):
 
 def main():
   choice = get_choice()
-  temperature = get_temperature()
-
-  if not validate_temperature(choice, temperature):
-    print("Invalid temperature! Input lies below absolute zero.")
-    return
+  while True:
+    temperature = get_temperature()
+    if not validate_temperature(choice, temperature):
+      print("Invalid temperature! Under absolut zero. (0K)")
+      continue
+    else:
+      break
 
   if choice == "1":
     print(f"Degrees Fahrenheit: {celsius_to_fahrenheit(temperature)}°F")
@@ -63,6 +65,7 @@ def main():
     print(f"Degrees Celsius: {kelvin_to_celsius(temperature)}°C")
     print(f"Degrees Fahrenheit: {kelvin_to_fahrenheit(temperature)}°F")
 
+  input(f"\nPress Enter to exit...")
 
 if __name__ == "__main__":
   main()
