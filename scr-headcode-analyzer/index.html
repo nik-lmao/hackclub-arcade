@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCR Headcode Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SCR Headcode Analyzer</h1>
+        <p>Enter the headcode you want to analyze below:</p>
+        <input type="text" id="headcode" maxlength="4" placeholder="Enter 4-digit headcode">
+        <br>
+        <button id="analyze">Analyze Headcode</button>
+        <p>Headcode Analysis Result:</p>
+        <br>
+        <br>
+        
+        <div class="results-after">
+            <p class>Headcode:</p>
+            <h2>Loading...</h2>
+
+            <p>Train Class:</p>
+            <h2 id="type">Loading...</h2>
+
+            <p>Destination:</p>
+            <h2>Loading...</h2>
+        </div>
+
+        
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

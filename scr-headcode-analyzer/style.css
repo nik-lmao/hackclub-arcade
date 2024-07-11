@@ -1,0 +1,113 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    background-color: rgb(255, 235, 180);
+}
+
+#headcode {
+    border-radius: 200px;
+    border: none;
+
+    width: 200px;
+
+    color: black;
+
+    font-weight: bold;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+#headcode:focus {
+    outline: none;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 50px 100px;
+    border-radius: 15px;
+    animation: fade 2s;
+}
+
+.container > h1 {
+    margin-bottom: 30px;
+}
+
+.container > p {
+    margin-bottom: 20px;
+}
+
+.container > input {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.container > button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 500px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.container > button:hover {
+    transform: scale(1.1);
+}
+
+.container > button:active {
+    transform: scale(1.05);
+}
+
+.result-before {
+    display: block;
+    color: transparent;
+}
+
+.result-after {
+    display: block;
+    height: max-content;
+    width: max-content;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 50px;
+    margin: auto;
+    user-select: text;
+}
+
+.results-before {
+    display: block;
+    color: transparent;
+}
+
+.results-after {
+    display: block;
+    color: black;
+}
+
+.results-after > * {
+    margin: none;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
