@@ -1,4 +1,12 @@
-document.getElementById('textInput').addEventListener('input', () => {
+window.onload = function(){
+    document.getElementById('wordCount').textContent = `Words: 0`;
+    document.getElementById('sentenceCount').textContent = `Sentences: 0`;
+    document.getElementById('characterCount').textContent = `Characters (excluding spaces): 0`;
+    document.getElementById('characterIncludingSpacesCount').textContent = `Characters (including spaces): 0`;
+    document.getElementById('uniqueWordCount').textContent = `Unique words: 0`;
+  }
+  
+  document.getElementById('textInput').addEventListener('input', () => {
     const text = document.getElementById('textInput').value;
   
     if (text.trim() === "") {
