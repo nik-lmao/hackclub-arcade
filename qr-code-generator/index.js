@@ -9,7 +9,7 @@ document.getElementById('generate').addEventListener('click', function() {
             height: 256,
         });
 
-        document.getElementById('overlay').style.display = 'flex';
+        document.getElementById('overlay').style.display = 'flex';    
     } else {
         alert('Please enter some text');
     }
