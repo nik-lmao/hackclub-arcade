@@ -8,7 +8,51 @@ function doConfetti() {
 
 window.onload = function() {
     updateTaskCount();
+
+    var tasks = localStorage.getItem("tasks");
+
+    tasks = tasks ? JSON.parse(tasks) : [];
+
+    tasks.forEach(function(task) {
+        var ul = document.getElementById("tasks");
+
+        var div = document.createElement("div");
+        div.className = "task";
+        div.ondblclick = function() {
+            markTask(div);
+        };
+
+        var li = document.createElement("li");
+        li.textContent = task;
+
+        var button = document.createElement("button");
+        button.textContent = "×";
+        button.onclick = function() {
+            deleteTask(div);
+        };
+
+        ul.appendChild(div);
+        div.appendChild(li);
+        div.appendChild(button);
+    });
+
+
+    var draft = localStorage.getItem("draft");
+
+    if(draft){
+        document.getElementById("task").value = draft;
+    }
 };
+
+
+document.getElementById("task").onchange = function(){
+
+    draft = document.getElementById("task").value;
+
+    localStorage.setItem("draft", draft);
+
+}
+
 
 function addTask() {
     var task = document.getElementById("task").value;
@@ -41,22 +85,56 @@ function addTask() {
 
     document.getElementById("task").value = "";
 
+
+    var tasks = localStorage.getItem("tasks");
+
+    tasks = tasks ? JSON.parse(tasks) : [];
+
+    tasks.push(task);
+
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+
+
+
     updateTaskCount();
 
     doConfetti();
 }
 
 function deleteTask(task) {
+
+    var tasks = localStorage.getItem("tasks");
+
+    tasks = tasks ? JSON.parse(tasks) : [];
+
+    var index = tasks.indexOf(task.firstChild.textContent);
+
+    tasks.splice(index, 1);
+
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+
     task.remove();
+
+    updateTaskCount();
 }
 
 function clearTasks() {
-    alert("Implement later");
+    var ul = document.getElementById("tasks");
+
+    ul.innerHTML = "";
+    updateTaskCount();
+
+    localStorage.removeItem("tasks");
 }
 
 function markTask(task) {
     
-    alert("Implement later");
+    if(task.style.backgroundColor != "white"){
+        task.style.backgroundColor = "white";
+    }
+    else{
+        task.style.backgroundColor = "lightgreen";
+    }
 }
 
 function updateTaskCount() {
