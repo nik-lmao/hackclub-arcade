@@ -1,4 +1,3 @@
-/* style.css */
 
 body {
     font-family: Arial, sans-serif;
@@ -20,72 +19,75 @@ body {
     text-align: center;
 }
 
-h1 {
-    margin-bottom: 20px;
-    font-size: 26px;
-    color: #0056b3;
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
-input[type="text"] {
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #0056b3;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 16px;
+.task button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+
 }
+
+.task button:hover {
+    background-color: #ff3333;
+}
+
+.task button:active {
+    background-color: #ff1a1a;
+}
+
+.task li {
+    list-style: none;
+}
+
+input {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    transition: all 0.2s;
+}
+
+input:hover {
+    transform: scale(1.01);
+}
+
+input:focus {
+    outline:none;
+    transform: scale(1.03);
+}
+
+
+
 
 button {
-    padding: 10px 20px;
-    margin-bottom: 10px;
+    background-color: #4d79ff;
+    color: #fff;
     border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
+
+    transition: all 0.2s;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #4d4dff;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul div {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-
-ul div li {
-    flex-grow: 1;
-    font-size: 16px;
-    color: #333;
-}
-
-ul div button {
-    background-color: #dc3545;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
-ul div button:hover {
-    background-color: #c82333;
+button:active {
+    background-color: #3131ff;
 }

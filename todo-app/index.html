@@ -9,12 +9,21 @@
 <body>
     <div class="container">
         <h1>To-Do App</h1>
+        <p>With this application you can save your tasks!</p>
         <input type="text" id="task" placeholder="Enter a task">
         <button onclick="addTask()">Add Task</button>
         <ul id="tasks">
-            <div>
-                <button onclick="deleteTask(0)">&times;</button>
+            <div class="task">
                 <li>Task 1</li>
+                <button onclick="deleteTask(0)">&times;</button>
+            </div>
+            <div class="task">
+                <li>Task 2</li>
+                <button onclick="deleteTask(0)">&times;</button>
+            </div>
+            <div class="task">
+                <li>Task 3</li>
+                <button onclick="deleteTask(0)">&times;</button>
             </div>
         </ul>
     </div>
