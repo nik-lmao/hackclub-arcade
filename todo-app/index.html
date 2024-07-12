@@ -10,23 +10,15 @@
     <div class="container">
         <h1>To-Do App</h1>
         <p>With this application you can save your tasks!</p>
-        <input type="text" id="task" placeholder="Enter a task">
-        <button onclick="addTask()">Add Task</button>
+        <input type="text" id="task" placeholder="Enter a task" autocomplete="off">
+        <button onclick="addTask()" class="green">Add Task</button>
+        <button onclick="clearTasks()" class="red">Clear Tasks</button>
         <ul id="tasks">
-            <div class="task">
-                <li>Task 1</li>
-                <button onclick="deleteTask(0)">&times;</button>
-            </div>
-            <div class="task">
-                <li>Task 2</li>
-                <button onclick="deleteTask(0)">&times;</button>
-            </div>
-            <div class="task">
-                <li>Task 3</li>
-                <button onclick="deleteTask(0)">&times;</button>
-            </div>
+            
         </ul>
+        <p id="task-count">Loading...</p>
     </div>
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 </body>
 </html>
