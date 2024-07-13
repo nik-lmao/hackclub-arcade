@@ -1,110 +1,118 @@
 body {
-    background: linear-gradient(135deg, #000, #1a1a1a);
-    color: #e0e0e0;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    line-height: 1.6;
-  }
+  background: linear-gradient(135deg, #000, #1a1a1a);
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  color: #0061fe;
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 30px rgba(0, 97, 254, 1);
+}
+
+p {
+  text-align: center;
+  font-size: 19px;
+  margin: 0;
+}
+
+input, textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 5px;
+  background: #222;
+  color: #e0e0e0;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background 0.2s, box-shadow 0.2s;
+  display: block;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aaa;
+}
+
+input:focus, textarea:focus {
+  background: #333;
+  box-shadow: 0 0 10px rgba(0, 97, 254, 0.7);
+  outline: none;
+}
+
+button {
+  background: linear-gradient(135deg, #0061fe, #003d47);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+  background: #005cbf;
+  transform: translateY(-3px);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+  background: #003d47;
+  transform: translateY(1px);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+#entries {
+  margin-top: 20px;
+}
+
+.entry {
+  background: #333;
+  border-radius: 5px;
+  margin: 10px auto;
+  transition: background 0.3s;
+  max-width: 600px;
+
+  height: max-content;
+}
+
+.entry:hover {
+  background: #444;
+}
+
+.name {
+
+  font-weight: bold;
+  color: #0061fe;
+  font-size: 19px;
+  margin: 0;
   
+  text-shadow: 0 0 10px rgba(0, 97, 254, 0.5);
+}
+
+.message {
+  text-align: left;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+@media (max-width: 600px) {
   h1 {
-    text-align: center;
-    color: #0061fe;
-    font-size: 40px;
-    margin-bottom: 20px;
-    text-shadow: 0 0 30px rgba(0, 97, 254, 1);
+      font-size: 32px;
   }
-  
-  p {
-    text-align: center;
-    font-size: 19px;
-  }
-  
-  input, textarea {
-    width: 100%;
-    max-width: 400px;
-    padding: 12px;
-    margin: 10px auto;
-    border: none;
-    border-radius: 5px;
-    background: #222;
-    color: #e0e0e0;
-    font-size: 16px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    transition: background 0.3s, box-shadow 0.3s;
-    display: block;
-  }
-  
-  input::placeholder, textarea::placeholder {
-    color: #aaa;
-  }
-  
-  input:focus, textarea:focus {
-    background: #333;
-    box-shadow: 0 0 10px rgba(0, 97, 254, 0.7);
-    outline: none;
-  }
-  
+
   button {
-    background: linear-gradient(135deg, #0061fe, #003d47);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 12px 24px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
-    display: block;
-    margin: 20px auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      width: 100%;
   }
-  
-  button:hover {
-    background: #005cbf;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-  }
-  
-  button:active {
-    background: #003d47;
-    transform: translateY(1px);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-  }
-  
-  #entries {
-    margin-top: 20px;
-  }
-  
-  .entry {
-    background: #333;
-    border-radius: 5px;
-    margin: 10px auto;
-    transition: background 0.3s;
-    max-width: 600px;
-  
-  }
-  
-  .entry:hover {
-    background: #444;
-  }
-  
-  .name {
-    font-weight: bold;
-    color: #0061fe;
-    font-size: 19px;
-    text-shadow: 0 0 10px rgba(0, 97, 254, 0.5);
-  }
-  
-  .message {
-    font-size: 16px;
-  }
-  
-  @media (max-width: 600px) {
-    h1 {
-        font-size: 32px;
-    }
-  
-    button {
-        width: 100%;
-    }
-  }
-  
+}
