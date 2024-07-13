@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.container {
+    background: #fff;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.1em;
+    color: #666;
+    
+}
+
+#scan {
+    background: #4CAF50;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-size: 1em;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#scan:hover {
+    background: #45A049;
+    transform: scale(1.02);
+}
+
+#scan:active {
+    background: #3e8e41;
+}
+
+#output {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #555;
+    min-height: 1.5em;
+}
+
