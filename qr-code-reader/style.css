@@ -34,7 +34,7 @@ p {
     
 }
 
-#scan {
+#read {
     background: #4CAF50;
     color: white;
     padding: 1em 2em;
@@ -48,12 +48,12 @@ p {
     margin-bottom: 30px;
 }
 
-#scan:hover {
+#read:hover {
     background: #45A049;
     transform: scale(1.02);
 }
 
-#scan:active {
+#read:active {
     background: #3e8e41;
 }
 
