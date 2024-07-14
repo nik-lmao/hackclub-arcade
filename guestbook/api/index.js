@@ -14,7 +14,23 @@ app.get('/', (req, res) => {
 });
 
 
+app.post('/new', (req, res) => {
+    const name = req.body.name;
+    const message = req.body.message;
+    const ip_address = req.ip;
 
+    if(!name || !message) {
+        return res.status(400).send('Name and message are required');
+    }
+
+    db.run('INSERT INTO entries (name, message, created_at, ip_address) VALUES (?, ?, ?, ?)', [name, message, new Date(), ip_address], (err) => {
+        if(err) {
+            return res.status(500).send('Error saving entry');
+        }
+    });
+
+    res.status(201).json({name, message});
+});
 
 
 app.get('/entries', (req, res) => {

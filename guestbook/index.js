@@ -14,7 +14,7 @@ function addEntry(name, message) {
 
   entryDiv.appendChild(nameParagraph);
   entryDiv.appendChild(messageParagraph);
-  entries.appendChild(entryDiv);
+  entries.insertBefore(entryDiv, entries.firstChild);
 }
   
 const sampleData = [
@@ -27,18 +27,45 @@ const sampleData = [
     "message": "Very nice! This page is amazing. I'm able to leave any type of comment. I'm so happy to see you!"
   }
 ]
-  
+
+
+// hihah
+
+
 window.onload = function() {
-  sampleData.forEach(entry => {
-    addEntry(entry.name, entry.message);
-  });
+  fetch("http://localhost:3000/entries")
+    .then(response => response.json())
+    .then(data => {
+      data.reverse().forEach(entry => {
+        console.log(entry);
+        addEntry(entry.name, entry.message);
+      });
+    })
+    .catch(error => {
+      console.error("Error fetching entries:", error);
+    });
 }
 
 document.getElementById("new-entry").onclick = function(){
+
   const name = document.getElementById("name").value;
   const message = document.getElementById("message").value;
 
-  
-  
-  alert(name + " " + message)
+  fetch("http://localhost:3000/new", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      name: name,
+      message: message
+    })
+  }).then(response => {
+    if(response.status === 201) {
+      addEntry(name, message);
+    }
+    else {
+      alert("Error saving entry");
+    }
+  });
 }

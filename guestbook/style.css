@@ -1,5 +1,7 @@
 body {
   background: linear-gradient(135deg, #000, #1a1a1a);
+  
+  height: 100vh;
   color: #e0e0e0;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -21,6 +23,7 @@ p {
 }
 
 input, textarea {
+  font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   max-width: 400px;
   padding: 12px;
@@ -31,8 +34,10 @@ input, textarea {
   color: #e0e0e0;
   font-size: 16px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  transition: background 0.2s, box-shadow 0.2s;
+  transition: all 0.2s;
   display: block;
+
+  resize: none;
 }
 
 input::placeholder, textarea::placeholder {
@@ -46,29 +51,26 @@ input:focus, textarea:focus {
 }
 
 button {
-  background: linear-gradient(135deg, #0061fe, #003d47);
+  background-color: #0072ec;
   color: #fff;
   border: none;
   border-radius: 5px;
   padding: 12px 24px;
   font-size: 16px;
   cursor: pointer;
-  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
   display: block;
   margin: 20px auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+  transition: all 0.3s;
 }
 
 button:hover {
-  background: #005cbf;
-  transform: translateY(-3px);
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  background-color: #005cbf;
 }
 
 button:active {
-  background: #003d47;
-  transform: translateY(1px);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  background-color: #003d47;
 }
 
 #entries {
@@ -79,7 +81,7 @@ button:active {
   background: #333;
   border-radius: 5px;
   margin: 10px auto;
-  transition: background 0.3s;
+  transition: all 0.3s;
   max-width: 600px;
 
   height: max-content;
