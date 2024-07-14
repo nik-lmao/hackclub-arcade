@@ -17,24 +17,23 @@ lcd = I2cLcd(i2c, I2C_ADDR, I2C_NUM_ROWS, I2C_NUM_COLS)
 
 button = Pin(14, Pin.IN, Pin.PULL_UP)
 
-rtc = ds3231.RTC(sda_pin=4, scl_pin=5)
-    
-#custom
+i2c_2 = I2C(1, sda=machine.Pin(6), scl=machine.Pin(7), freq=400000)
+
+rtc = ds3231.DS3231(i2c_2)
+
+print(rtc.get_time())
 
 def updateTime(line):
-    current_time = time.localtime()
-    
-    lcd.move_to(2,line)
-
+    current_time = rtc.get_time()
+    lcd.move_to(2, line)
     string = "{:02}.{:02} - {:02}:{:02}".format(current_time[2], current_time[1], current_time[3], current_time[4])
-
     lcd.putstr(string)
-    
+
 lcd.clear()
 
-lcd.move_to(1,0)
+lcd.move_to(1, 0)
 lcd.putstr("Nikita Nikitin")
-lcd.move_to(2,1)
+lcd.move_to(2, 1)
 lcd.putstr("gh @nik-lmao")
 
 time.sleep(2)
@@ -63,11 +62,10 @@ lcd.custom_char(1, bytearray([
     0x04,
     0x00]))
 
-lcd.move_to(0,0)
+lcd.move_to(0, 0)
 lcd.putchar(chr(0))
-lcd.move_to(0,1)
+lcd.move_to(0, 1)
 lcd.putchar(chr(1))
-
 
 while True:
     if button.value() == 0:
