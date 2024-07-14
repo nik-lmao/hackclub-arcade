@@ -1,4 +1,4 @@
-function addEntry(name, message) {
+function addEntry(name, message, time) {
   const entryDiv = document.createElement("div");
   entryDiv.className = "entry";
 
@@ -12,8 +12,13 @@ function addEntry(name, message) {
   messageParagraph.className = 'message';
   messageParagraph.textContent = message;
 
+  const timeParagraph = document.createElement("p");
+  timeParagraph.className = 'time';
+  timeParagraph.textContent = String(time.toLocaleString());
+
   entryDiv.appendChild(nameParagraph);
   entryDiv.appendChild(messageParagraph);
+  entryDiv.appendChild(timeParagraph);
   entries.insertBefore(entryDiv, entries.firstChild);
 }
   
@@ -37,13 +42,21 @@ window.onload = function() {
     .then(response => response.json())
     .then(data => {
       data.reverse().forEach(entry => {
-        console.log(entry);
-        addEntry(entry.name, entry.message);
+        addEntry(entry.name, entry.message, new Date(entry.created_at));
       });
+      if(data === null || data.length === 0) {
+        const message = document.createElement("p");
+        message.textContent = "No entries to display";
+        message.className = "no-entries";
+        document.getElementById("entries").appendChild(message);
+      }
     })
     .catch(error => {
-      console.error("Error fetching entries:", error);
+      alert("Error loading the page");
+      console.log(error);
     });
+
+    
 }
 
 document.getElementById("new-entry").onclick = function(){
@@ -51,6 +64,21 @@ document.getElementById("new-entry").onclick = function(){
   const name = document.getElementById("name").value;
   const message = document.getElementById("message").value;
 
+  if(name === "" || message === "") {
+    alert("Please enter both a name and a message.");
+    return;
+  }
+
+  if(name.length > 20 || name.length < 2) {
+    alert("Please enter your real name.");
+    return;
+  }
+
+  if(message.length < 10 || message.length > 200) {
+    alert("Please enter a message between 10 and 200 characters.");
+    return;
+  }
+  
   fetch("http://localhost:3000/new", {
     method: "POST",
     headers: {
@@ -67,5 +95,8 @@ document.getElementById("new-entry").onclick = function(){
     else {
       alert("Error saving entry");
     }
+  }).catch(error => {
+    alert("Error saving entry");
+    console.log(error);
   });
 }

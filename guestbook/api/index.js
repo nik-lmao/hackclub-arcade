@@ -34,7 +34,7 @@ app.post('/new', (req, res) => {
 
 
 app.get('/entries', (req, res) => {
-    db.all('SELECT * FROM entries ORDER BY created_at DESC LIMIT 50', (err, rows) => {
+    db.all('SELECT name, message, created_at FROM entries ORDER BY created_at DESC LIMIT 50', (err, rows) => {
         if (err) {
             return res.status(500).send('Error retrieving entries');
         }
