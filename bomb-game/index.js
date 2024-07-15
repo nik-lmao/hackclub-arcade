@@ -1,3 +1,6 @@
+
+
+
 function distributeBombs(amount) {
     var cells = document.getElementsByClassName("cell");
     
@@ -32,14 +35,27 @@ function flipCell(cell) {
     }
 }
 
+function startGame(){
+    var cells = document.getElementsByClassName("cell");
+    for (var i = 0; i < cells.length; i++) {
+        cells[i].innerHTML = "❓";
+        cells[i].disabled = false;
+        cells[i].classList.remove("explosion");
+    }
+
+    var bombCount = document.getElementById("bombCount").value;
+
+    if(!bombCount || bombCount > 25 || bombCount < 1){
+        bombCount = 5;
+    }
+
+    distributeBombs(bombCount);
+}
+
 window.onload = function() {
     var cells = document.getElementsByClassName("cell");
-
-    distributeBombs(10);
-
+    
     for (var i = 0; i < cells.length; i++) {
-        cells[i].addEventListener("click", function() {
-            flipCell(this);
-        });
+        cells[i].disabled = true;
     }
 }
