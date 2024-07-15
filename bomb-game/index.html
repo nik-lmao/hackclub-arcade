@@ -11,6 +11,7 @@
         <h1>Bomb Game</h1>
         <p>Uncover as many fields as you can without finding the bomb!</p>
         <input type="number" id="bombCount" placeholder="Number of bombs">
+        <p id="announce"></p>
         <div id="field">
             <button class="cell" onclick="flipCell(this)">❓</button>
             <button class="cell" onclick="flipCell(this)">❓</button>
@@ -43,9 +44,11 @@
             <button class="cell" onclick="flipCell(this)">❓</button>
         </div>
         <button onclick="startGame()" class="startButton">Start Game</button>
+        <button onclick="endGame()" class="endButton" id="endButton">End Game</button>
     </div>
     
 
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 </body>
 </html>

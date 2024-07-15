@@ -1,4 +1,4 @@
-
+var revealed = 0;
 
 
 function distributeBombs(amount) {
@@ -33,9 +33,15 @@ function flipCell(cell) {
             cells[i].disabled = true;
         }
     }
+    else {
+        revealed ++;
+        document.getElementById("announce").innerHTML = "💎 " + revealed;
+    }
 }
 
 function startGame(){
+    document.getElementById("announce").innerHTML = "💎 0";
+    revealed = 0;
     var cells = document.getElementsByClassName("cell");
     for (var i = 0; i < cells.length; i++) {
         cells[i].innerHTML = "❓";
@@ -50,12 +56,45 @@ function startGame(){
     }
 
     distributeBombs(bombCount);
+
+    document.getElementById("endButton").disabled = false;
+}
+
+function endGame(){
+    if(revealed > 0){
+        document.getElementById("endButton").disabled = true;
+        var cells = document.getElementsByClassName("cell");
+        for (var i = 0; i < cells.length; i++) {
+            cells[i].disabled = true;
+            var cells = document.getElementsByClassName("cell");
+            for (var i = 0; i < cells.length; i++) {
+                var isBomb = cells[i].getAttribute("data-bomb") === "true";
+                cells[i].innerHTML = isBomb ? "💣" : "💎";
+                cells[i].disabled = true;
+            }
+
+        }
+
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 },
+        });
+        document.getElementById("announce").innerHTML = "💎 0";
+        revealed = 0;
+    }
+    
+    
 }
 
 window.onload = function() {
+    document.getElementById("endButton").disabled = true;
     var cells = document.getElementsByClassName("cell");
+    document.getElementById("announce").innerHTML = "💎 0";
+    revealed = 0;
     
     for (var i = 0; i < cells.length; i++) {
         cells[i].disabled = true;
     }
+    
 }
