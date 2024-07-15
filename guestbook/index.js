@@ -1,3 +1,10 @@
+function validateMessage(name, message) {
+  if(name === "" || message === "" || name.length > 50 || message.length > 200 || name.length < 2 || message.length < 10) {
+    return false;
+  }
+  return true;
+}
+
 function addEntry(name, message, time) {
   const entryDiv = document.createElement("div");
   entryDiv.className = "entry";
@@ -64,18 +71,10 @@ document.getElementById("new-entry").onclick = function(){
   const name = document.getElementById("name").value;
   const message = document.getElementById("message").value;
 
-  if(name === "" || message === "") {
-    alert("Please enter both a name and a message.");
-    return;
-  }
+  const valid = validateMessage(name, message)
 
-  if(name.length > 20 || name.length < 2) {
-    alert("Please enter your real name.");
-    return;
-  }
-
-  if(message.length < 10 || message.length > 200) {
-    alert("Please enter a message between 10 and 200 characters.");
+  if(!valid) {
+    alert("Your message is invalid. Please try again.");
     return;
   }
   
@@ -89,14 +88,14 @@ document.getElementById("new-entry").onclick = function(){
       message: message
     })
   }).then(response => {
-    if(response.status === 201) {
+    if(response.status < 400) {
       addEntry(name, message);
     }
     else {
       alert("Error saving entry");
+      console.log(response);
     }
   }).catch(error => {
-    alert("Error saving entry");
     console.log(error);
   });
 }
