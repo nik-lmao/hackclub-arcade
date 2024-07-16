@@ -2,6 +2,7 @@ import random
 import time
 import os
 import json
+from fuzzywuzzy import fuzz
 
 while True:
     question_type = input("Would you like to play the default quiz game? ")
@@ -41,8 +42,6 @@ while True:
         print("Please enter a valid number.")
         continue
 
-
-
 random.shuffle(questions)
 selected_questions = questions[:question_count]
 
@@ -55,7 +54,12 @@ for count in range(question_count):
 
     user_answer = input("Enter your answer: ")
 
-    if user_answer.lower() == question["answer"].lower():
+    user_answer_normalized = user_answer.strip().lower()
+    correct_answer_normalized = question["answer"].strip().lower()
+
+    similarity = fuzz.ratio(user_answer_normalized, correct_answer_normalized)
+
+    if similarity >= 80:
         score += 1
         print(f"Correct! The answer is {question['answer']}. Your score is {score}")
     else:
