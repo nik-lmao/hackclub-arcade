@@ -1,48 +1,55 @@
 import random
 import time
 import os
+import json
 
-questions = [
-    {
-        "question": "What is the capital of France?",
-        "answer": "Paris"
-    },
+while True:
+    question_type = input("Would you like to play the default quiz game? ")
+    if question_type.lower() == "yes":
+        path = "./default.json"
+        break
+    elif question_type.lower() == "no":
+        path = "./questions.json"
+        break
+    else:
+        print("Please enter yes or no.")
+        continue
 
-    {
-        "question": "What is the capital of Spain?",
-        "answer": "Madrid"
-    },
+with open(path, "r") as file:
+    data = json.load(file)
 
-    {
-        "question": "What is the capital of Italy?",
-        "answer": "Rome"
-    }
-]
+questions = data["questions"]
 
 score = 0
 
 while True:
-    question_count = int(input("How many questions would you like? "))
-    if question_count > len(questions):
-        os.system("clear" if os.name == "posix" else "cls")
-        print(f"Sorry, we only have {len(questions)} questions available.")
-        continue
+    try:
+        question_count = int(input(f"How many questions would you like? There are {len(questions)} questions available: "))
+        if question_count > len(questions):
+            os.system("clear" if os.name == "posix" else "cls")
+            print(f"Sorry, we only have {len(questions)} questions available.")
+            continue
 
-    if question_count < 1:
+        if question_count < 1:
+            os.system("clear" if os.name == "posix" else "cls")
+            print("Please enter a valid number.")
+            continue
+        else:
+            break
+    except ValueError:
         os.system("clear" if os.name == "posix" else "cls")
         print("Please enter a valid number.")
         continue
-    else:
-        break
-    
 
 
-count = 0
+
+random.shuffle(questions)
+selected_questions = questions[:question_count]
 
 os.system("clear" if os.name == "posix" else "cls")
 
-while count < question_count:
-    question = random.choice(questions)
+for count in range(question_count):
+    question = selected_questions[count]
 
     print(question["question"])
 
@@ -54,6 +61,7 @@ while count < question_count:
     else:
         print(f"Wrong! The answer is {question['answer']}. Your score is {score}")
 
-    questions.remove(question)       
-
+    time.sleep(1)
     os.system("clear" if os.name == "posix" else "cls")
+
+print(f"Quiz finished! Your final score is {score} out of {question_count}")
