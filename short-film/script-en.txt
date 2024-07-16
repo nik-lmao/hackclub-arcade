@@ -1,59 +1,46 @@
 **Roles:**
+- Maximilian Saftsack - Mika
+- Nikita (Victim) - Nikita
+- Daniel Schluchtenscheißer - Nikita
 
-Maximilian Saftsack - Mika  
-Nikita - Nikita  
-Daniel Schluchtenscheißer - Nikita  
+1. **Maximilian's Home**
 
----
+Maximilian is sitting on his bed. He is using WhatsApp to write to Nikita. His weapon lies next to him.
 
-**1. Maximilian's Home**
+{over shoulder}
+[
+Nikita: "So you’re coming to me? We can have a drink for a bit."
+Maximilian: "Yeah, I'm on my way!"
+]
 
-Maximilian uses WhatsApp to write to Nikita:
+2. **In Front of Maximilian's House**
 
-```
-Nikita: "Are you coming to my place?"
-Maximilian: "Yes, I'm on my way!"
-```
+{from behind}
+Maximilian gets on his bicycle. He is calm and relaxed.
 
----
+3. **In Front of Nikita's House**
 
-**2. In Front of Maximilian's House**
+The house looks normal, but the front door is slightly ajar. Maximilian calls out for Nikita but gets no response. Hesitantly, he opens the door and steps inside.
 
-Maximilian gets on his bike and rides off.
+4. **Living Room**
 
----
+In the living room, there is a figure under a blanket on the floor. Maximilian approaches cautiously, sees Nikita's lifeless body, and suddenly hears a chair creaking. He turns around and sees Daniel.
 
-**3. In Front of the House**
+Maximilian: "Who are you? How did you get in here? What have you done to Nikita?"
+Daniel: "I’m Dr. Daniel Schluchtenscheißer. To answer your question: He saw too much. Just like you now."
+Maximilian: "What are you planning? I have a weapon."
+Daniel: "It's too late. I'm sorry to have to tell you this, but you are already dead."
 
-Maximilian uses WhatsApp to write to Nikita:
+Maximilian laughs nervously.
 
-```
-Maximilian: "I'm here now. Where are you?" (not delivered)
-Maximilian: "Hello??"
-```
+Daniel briefly blurs and appears behind Maximilian.
 
-Maximilian enters the house.
+Maximilian stops laughing and turns around, startled.
 
----
-
-**4. Nikita's Room**
-
-Nikita lies dead under a blanket.
-
-Daniel Schluchtenscheißer sits on the bed.
-
-*Dialogue*
-
-"It's too late. You're already dead."
-
-*Daniel teleports behind Maximilian*
-
-Maximilian: "How... How did you do that?"
-
-*Daniel laughs*
-
+Maximilian: "How... how did you do that?"
+Daniel laughs.
 Daniel: "Too late, Mr. Saftsack."
 
-Black screen
+Black screen.
 
-*Sound of Maximilian falling to the ground*
+Sound of Maximilian falling to the ground.

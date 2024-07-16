@@ -1,54 +1,46 @@
 Rollen:
-
 Maximilian Saftsack - Mika
-Nikita - Nikita
+Nikita (Opfer) - Nikita
 Daniel Schluchtenscheißer - Nikita
 
+1. Maximilians Zuhause
 
+Maximilian sitzt auf seinem Bett. Er benutzt WhatsApp, um Nikita zu schreiben. Seine Waffe liegt neben ihm.
 
-1. Maximilian's Zuhause
-Maximilian benutzt WhatsApp, um Nikita zu schreiben:
-
+{über Schulter}
 [
-
-Nikita: "Dann kommst du zu mir?"
+Nikita: "Dann kommst du zu mir? Wir können noch kurz was trinken."
 Maximilian: "Ja, bin auf dem Weg!"
-
 ]
 
+2. Vor Maximilians Haus
 
-2. Vor Maximilian's Haus
-Maximilian setzt sich auf sein Fahrrad und fährt los
+{von hinten}
+Maximilian setzt sich auf sein Fahrrad. Maximilian ist ruhig und entspannt
 
+3. Vor Nikitas Haus
 
-3. Vor dem Haus
-Maximilian benutzt WhatsApp, um Nikita zu schreiben:
+Das Haus wirkt normal, aber die Haustür steht leicht offen. Maximilian ruft Nikita an, bekommt aber keine Antwort. Zögernd öffnet er die Tür und tritt ein.
 
-[
+4. Wohnzimmer
 
-Maximilian: "Ich bin jetzt da. Wo bist du?" (nicht zugestellt)
-Maximilian: "Halloo??"
+Im Wohnzimmer liegt eine Gestalt unter einer Decke auf dem Boden. Maximilian nähert sich vorsichtig, sieht Nikitas leblosen Körper und hört plötzlich ein Stuhlknarren. Er dreht sich um und sieht Daniel.
 
-]
+Maximilian: "Wer sind Sie? Wie sind Sie hier reingekommen? Was haben Sie mit Nikita gemacht?"
+Daniel: "Ich bin Dr. Daniel Schluchtenscheißer. Zu deiner Frage: Er hat zu viel gesehen. Genau wie du jetzt."
+Maximilian: "Was haben Sie vor? Ich habe eine Waffe."
+Daniel: "Es ist zu spät. Tut mir leid, dir das mitteilen zu müssen, aber du bist bereits tot."
 
-Maximilian geht in das Haus rein
+Maximilian lacht nervös.
 
+Daniel verschwimmt kurz und erscheint hinter Maximilian.
 
-4. Nikita's Zimmer
-Nikita liegt tot unter einer Decke
+Maximilian hört auf zu lachen und dreht sich erschrocken um.
 
-
-Daniel Schluchtenscheißer sitzt auf dem Bett
-
-*Dialog*
-
-
-"Es ist zu spät. Du bist schon tot."
-*Daniel teleportiert sich hinter Maximilian*
-Maximilian: "Wie... Wie hast du das gemacht?"
-*Daniel lacht*
+Maximilian: "Wie... wie hast du das gemacht?"
+Daniel lacht.
 Daniel: "Zu spät, Herr Saftsack."
 
-schwarzer Bildschirm
+Schwarzer Bildschirm.
 
-*zu Boden fallender Maximilian Sound*
+Geräusch von Maximilian, der zu Boden fällt.
