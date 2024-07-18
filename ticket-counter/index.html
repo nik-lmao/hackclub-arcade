@@ -7,17 +7,27 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Progress Tracker</h1>
+  
   <div class="container">
-    <p>Goal Tickets:</p>
-    <input type="number" id="goal" min="1" required>
+    <h1>Ticket Progress Tracker</h1>
+    <button onclick="submitTickets()">Enter your tickets</button>
+    <p>With this website you can track your Hackclub Arcade Tickets.</p>
     <br>
-    <p>Current Tickets:</p>
-    <input type="number" id="current" min="0" required>
+    <button onclick="submitGoal()">Enter your ticket goal</button>
     <br>
-    <button onclick="calculateProgress()">Calculate Progress</button>
-    <br>
-    <div id="result"></div>
+    <h1 id="tickets">0 🎟️</h1>
+    
+    <h1 id="goal">0 🎟️</h1>
+    
+    <div class="results">
+      <div id="bar">
+        <div id="have"></div>
+      </div>
+    </div>
+
+    <h1 id="percentage">0% 🎖️</h1>
+    
+
   </div>
   <script src="index.js"></script>
 </body>
