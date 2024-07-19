@@ -59,10 +59,11 @@ function updateBar(){
         document.getElementById("have").style.borderBottomRightRadius = "500px";
     }
 
-    
-
+    leftPercent = 100 - percent;
+    leftTickets = goal - tickets;
 
     document.getElementById("have").style.width = percent + "%";
 
-    document.getElementById("percentage").innerHTML = percent.toFixed(2) + "% 🎖️";
+    document.getElementById("percentage").innerHTML = percent.toFixed(2) + "% " + "(" + tickets + ")";
+    document.getElementById("percentage2").innerHTML = leftPercent.toFixed(2) + "% " + "(" + leftTickets + ")";
 }
