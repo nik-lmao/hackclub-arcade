@@ -1,0 +1,22 @@
+body {
+    background: linear-gradient(90deg, #0c0c0c, #111618);
+
+    color: white;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+}
+
+.container > * {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
