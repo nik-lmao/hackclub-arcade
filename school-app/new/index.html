@@ -10,33 +10,37 @@
     <div class="container">
         <h1>Add Entry</h1>
 
-        <input placeholder="Your ID" class="id">
+        <input type="number" placeholder="💳 | Enter your ID" id="userID" maxlength="1">
 
         <br>
 
-        <select>
+        <select id="entryType">
             <option>📝 | Homework</option>
             <option>📚 | Exam</option>
         </select>
 
         <br>
 
-        <input type="text" placeholder="Enter your todo">
+        <input type="text" placeholder="📚 | Enter your subject" id="subject" maxlength="3">
+
+        <br>
+
+        <input type="text" placeholder="📋 | Enter your todo" id="description">
 
         <br>
         
-        <input type="date">
+        <input type="date" id="date">
 
         <br>
 
-        <select>
+        <select id="entryOwner">
             <option>👤 | Own</option>
             <option>🤝 | Nikita & Sebastian</option>
         </select>
         
         <br>
 
-        <button>Add!</button>
+        <button id="addButton">Add!</button>
     </div>
     
     <script src="index.js"></script>
