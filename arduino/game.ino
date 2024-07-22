@@ -8,8 +8,10 @@ LiquidCrystal_I2C lcd(I2C_ADDR, LCD_COLUMNS, LCD_LINES);
 #define VERT_PIN A0
 #define SEL_PIN 2
 
+
 const int ledPin = 9;
 const int buttonPin = 3;
+
 
 byte carChar[] = {
   B00000,
@@ -32,6 +34,9 @@ byte boxChar[] = {
   B00000,
   B00000
 };
+
+
+
 
 int score = 0;
 
@@ -58,10 +63,11 @@ void setup() {
   }
 
   lcd.setCursor(0, 0);
-  lcd.print("Hello, World!");
+  lcd.print("Space Race Game!");
   delay(2000);
   lcd.clear();
 }
+
 
 void generateObstacle() {
   int row = random(0, LCD_LINES);
@@ -101,6 +107,44 @@ void draw() {
   }
 }
 
+bool checkCollision() {
+  return obstacles[carPos][LCD_COLUMNS - 1] == 1;
+}
+
 void loop() {
-  // Empty loop for now
+  static unsigned long lastUpdateTime = 0;
+  static unsigned long obstacleTime = 0;
+  const unsigned long updateInterval = 250;
+  const unsigned long obstacleInterval = 500;
+
+  int vert = analogRead(VERT_PIN);
+  static int lastVert = vert;
+
+  if (vert < 300 && lastVert >= 300 && carPos > 0) {
+    carPos--;
+  } else if (vert > 700 && lastVert <= 700 && carPos < LCD_LINES - 1) {
+    carPos++;
+  }
+  lastVert = vert;
+
+  unsigned long currentTime = millis();
+  if (currentTime - lastUpdateTime > updateInterval) {
+    lastUpdateTime = currentTime;
+    updateObstacles();
+    draw();
+    if (checkCollision()) {
+      lcd.clear();
+      lcd.setCursor(0, 0);
+      lcd.print("Game Over!");
+      while (true);
+    }
+    score ++;
+    lcd.home();
+    lcd.print(score);
+  }
+
+  if (currentTime - obstacleTime > obstacleInterval) {
+    obstacleTime = currentTime;
+    generateObstacle();
+  }
 }
