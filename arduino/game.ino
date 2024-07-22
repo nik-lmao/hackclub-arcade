@@ -11,8 +11,6 @@ LiquidCrystal_I2C lcd(I2C_ADDR, LCD_COLUMNS, LCD_LINES);
 const int ledPin = 9;
 const int buttonPin = 3;
 
-// Car & box characters
-
 byte carChar[] = {
   B00000,
   B00000,
@@ -65,6 +63,44 @@ void setup() {
   lcd.clear();
 }
 
+void generateObstacle() {
+  int row = random(0, LCD_LINES);
+  for (int col = LCD_COLUMNS - 1; col > 0; col--) {
+    obstacles[row][col] = obstacles[row][col - 1];
+  }
+  obstacles[row][0] = random(0, 2) == 0 ? ' ' : 1;
+}
+
+void updateObstacles() {
+  for (int i = 0; i < LCD_LINES; i++) {
+    for (int j = LCD_COLUMNS - 1; j > 0; j--) {
+      obstacles[i][j] = obstacles[i][j - 1];
+    }
+    obstacles[i][0] = ' ';
+  }
+}
+
+void draw() {
+  for (int i = 0; i < LCD_LINES; i++) {
+    for (int j = 0; j < LCD_COLUMNS; j++) {
+      char currentChar = obstacles[i][j];
+      if (i == carPos && j == LCD_COLUMNS - 1) {
+        currentChar = 0;
+      } else if (currentChar == 1) {
+        currentChar = 1;
+      } else {
+        currentChar = ' ';
+      }
+
+      if (displayBuffer[i][j] != currentChar) {
+        lcd.setCursor(j, i);
+        lcd.write(currentChar); 
+        displayBuffer[i][j] = currentChar;
+      }
+    }
+  }
+}
+
 void loop() {
-  // Create game later
+  // Empty loop for now
 }
