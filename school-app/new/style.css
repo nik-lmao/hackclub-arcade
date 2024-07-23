@@ -4,6 +4,12 @@ body {
     color: white;
 
     font-family: 'Roboto', sans-serif;
+
+    user-select: none;
+}
+
+h1 {
+    font-weight: bold;
 }
 
 .container {
