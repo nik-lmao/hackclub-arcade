@@ -1,0 +1,138 @@
+body {
+    background: linear-gradient(90deg, #0c0c0c, #111618);
+
+    color: white;
+
+    font-family: 'Roboto', sans-serif;
+
+    user-select: none;
+
+    text-align: center;
+}
+
+
+.highlight {
+    color: rgb(66, 101, 255);
+
+    text-shadow: 0 0 5px rgba(66, 101, 255);
+}
+
+.title {
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+
+}
+
+.desc {
+    font-size: 16px;
+    color: rgb(180, 180, 180);
+}
+
+.buttonContainer {
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.button {
+
+    padding: 10px 20px;
+    margin: 10px;
+
+    background: rgb(66, 101, 255);
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    box-shadow: 0 0 50px rgba(66, 101, 255, 0.5);
+
+    transition: all 0.2s;
+}
+
+.button2 {
+
+    padding: 10px 20px;
+    margin: 10px;
+
+    background: rgb(255, 73, 73);
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    box-shadow: 0 0 50px rgba(255, 73, 73, 0.5);
+
+    transition: all 0.2s;
+}
+
+.button3 {
+
+    padding: 10px 20px;
+    margin: 10px;
+
+    background: rgb(7, 224, 0);
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    box-shadow: 0 0 50px rgba(7, 224, 0, 0.5);
+
+    transition: all 0.2s;
+}
+
+
+.button:hover {
+    background: rgb(56, 91, 245);
+}
+
+.button:active {
+    background: rgb(46, 81, 235);
+}
+
+.button2:hover {
+    background: rgb(255, 53, 53);
+}
+
+.button2:active {
+    background: rgb(245, 43, 43);
+}
+
+.button3:hover {
+    background: rgb(7, 214, 0);
+}
+
+.button3:active {
+    background: rgb(0, 204, 0);
+}
+
+input {
+    color: white;
+    height: 17px;
+    width: 200px;
+    font-size: 16px;
+    
+    padding: 10px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    border: none;
+
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+}
