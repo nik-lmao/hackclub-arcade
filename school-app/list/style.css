@@ -25,6 +25,8 @@ body {
     padding: 15px;
 
     border-radius: 10px;
+
+    margin: 20px;
 }
 
 .entry > p {
@@ -41,6 +43,10 @@ body {
 
 .entry > p:hover {
     transform: scale(1.02);
+}
+
+.entries > p {
+    color: gray;
 }
 
 button {

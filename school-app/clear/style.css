@@ -1,0 +1,60 @@
+html {
+    user-select: none;
+}
+
+body {
+    background: linear-gradient(90deg, #0c0c0c, #111618);
+
+    color: white;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 20px;
+}
+
+.container {
+    text-align: center;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    color: gray;
+}
+
+#clear {
+    border: none;
+    border-radius: 5px;
+
+    padding:10px;
+
+    font-size: 16px;
+
+    background-color: rgb(255, 73, 73);
+
+    transition: all 0.2s;
+}
+
+#clear:hover {
+    background-color: rgb(255, 37, 37);
+    cursor: pointer;
+}
+
+#clear:active {
+    background-color: rgb(255, 14, 14);
+}

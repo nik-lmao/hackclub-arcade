@@ -30,7 +30,10 @@ document.getElementById("addButton").onclick = function() {
         entryType = "exam";
     }
     
-    var until = new Date(date).getTime();
+    var until = new Date(date);
+    until.setHours(7);
+    until.setMinutes(50);
+    until = until.getTime();
     
     var both = entryOwner.toLowerCase().includes("own") ? false : true;
     
