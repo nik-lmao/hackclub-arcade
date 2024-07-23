@@ -108,7 +108,7 @@ app.get("/list", (req, res) => {
         }
 
         const now = Date.now();
-        const filteredRows = rows.filter(row => row.done === 0 || new Date(row.until).getTime() > now);
+        const filteredRows = rows.filter(row => row.done === 0 && new Date(row.until).getTime() > now);
 
         return res.status(200).send(filteredRows);
     });
