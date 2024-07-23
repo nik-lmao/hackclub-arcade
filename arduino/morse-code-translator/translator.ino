@@ -86,5 +86,47 @@ void loop() {
       lastButtonPress = currentMillis;
     }
   }
+
+  if(digitalRead(buttonPin2) == LOW){
+    unsigned long currentMillis = millis();
+    if (currentMillis - lastResetPress > resetDebounceDelay) {
+      transcribeString();
+      lastResetPress = currentMillis;
+    }
+  }
 }
 
+void transcribeString() {
+  for (int i = 0; i < selectedString.length(); i++) {
+    char letter = selectedString[i];
+    int index = letter - 'A';
+    if (index >= 0 && index < alphabetLength) {
+      String morse = morseCode[index];
+      for (int j = 0; j < morse.length(); j++) {
+        if (morse[j] == '.') {
+          tone(buzzerPin, 1000, dotDuration);
+          delay(dotDuration);
+        } else if (morse[j] == '-') {
+          tone(buzzerPin, 1000, dashDuration);
+          delay(dashDuration);
+        }
+        delay(dotDuration);
+      }
+      delay(charPause);
+    }
+  }
+}
+
+void updateLCD() {
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("MorseCode Translator");
+  lcd.setCursor(0, 1);
+  lcd.print("Current: ");
+  lcd.print(alphabet[currentLetterIndex]);
+  lcd.setCursor(0, 2);
+  lcd.print("String: ");
+  lcd.print(selectedString);
+  lcd.setCursor(0, 3);
+  lcd.print("                    ");
+}
