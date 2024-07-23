@@ -57,6 +57,14 @@ void setup() {
 }
 
 void loop() {
+  checkVerticalMovement();
+  checkSelectButton();
+  checkResetButton();
+  checkTranscribeButton();
+  checkRemoveButton();
+}
+
+void checkVerticalMovement() {
   int vertValue = analogRead(VERT_PIN);
   unsigned long currentMillis = millis();
 
@@ -77,7 +85,9 @@ void loop() {
       lastVertChange = currentMillis;
     }
   }
+}
 
+void checkSelectButton() {
   if (digitalRead(SEL_PIN) == LOW) {
     unsigned long currentMillis = millis();
     if (currentMillis - lastButtonPress > debounceDelay) {
@@ -86,15 +96,9 @@ void loop() {
       lastButtonPress = currentMillis;
     }
   }
+}
 
-  if(digitalRead(buttonPin2) == LOW){
-    unsigned long currentMillis = millis();
-    if (currentMillis - lastResetPress > resetDebounceDelay) {
-      transcribeString();
-      lastResetPress = currentMillis;
-    }
-  }
-
+void checkResetButton() {
   if (digitalRead(buttonPin) == LOW) {
     unsigned long currentMillis = millis();
     if (currentMillis - lastResetPress > resetDebounceDelay) {
@@ -103,7 +107,19 @@ void loop() {
       lastResetPress = currentMillis;
     }
   }
+}
 
+void checkTranscribeButton(){
+  if(digitalRead(buttonPin2) == LOW){
+    unsigned long currentMillis = millis();
+    if (currentMillis - lastResetPress > resetDebounceDelay) {
+      transcribeString();
+      lastResetPress = currentMillis;
+    }
+  }
+}
+
+void checkRemoveButton() {
   if(digitalRead(buttonPin3) == LOW) {
     
     unsigned long currentMillis = millis();
