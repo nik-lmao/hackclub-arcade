@@ -94,6 +94,27 @@ void loop() {
       lastResetPress = currentMillis;
     }
   }
+
+  if (digitalRead(buttonPin) == LOW) {
+    unsigned long currentMillis = millis();
+    if (currentMillis - lastResetPress > resetDebounceDelay) {
+      selectedString = "";
+      updateLCD();
+      lastResetPress = currentMillis;
+    }
+  }
+
+  if(digitalRead(buttonPin3) == LOW) {
+    
+    unsigned long currentMillis = millis();
+    if (currentMillis - lastResetPress > resetDebounceDelay) {
+      if (selectedString.length() > 0) {
+        selectedString.remove(selectedString.length() - 1);
+        updateLCD();
+      }
+      lastResetPress = currentMillis;
+    }
+  }
 }
 
 void transcribeString() {
