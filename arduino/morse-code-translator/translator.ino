@@ -11,9 +11,33 @@ LiquidCrystal_I2C lcd(I2C_ADDR, LCD_COLUMNS, LCD_LINES);
 const int ledPin = 9;
 const int buttonPin = 3;
 const int buttonPin2 = 4;
+const int buttonPin3 = 5;
 const int buzzerPin = 10;
 
+char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+int alphabetLength = sizeof(alphabet) - 1;
 
+String morseCode[] = {
+  ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", 
+  "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", 
+  "..-", "...-", ".--", "-..-", "-.--", "--.." 
+};
+
+int currentLetterIndex = 0;
+String selectedString = "";
+
+unsigned long lastButtonPress = 0;
+const unsigned long debounceDelay = 200;
+
+unsigned long lastResetPress = 0;
+const unsigned long resetDebounceDelay = 200;
+
+unsigned long lastVertChange = 0;
+const unsigned long vertDebounceDelay = 200;
+
+const int dotDuration = 100;
+const int dashDuration = 300;
+const int charPause = 300;
 
 void setup() {
   lcd.init();
@@ -25,6 +49,7 @@ void setup() {
   pinMode(ledPin, OUTPUT);
   pinMode(buttonPin, INPUT_PULLUP);
   pinMode(buttonPin2, INPUT_PULLUP);
+  pinMode(buttonPin3, INPUT_PULLUP);
   pinMode(buzzerPin, OUTPUT);
 
   lcd.setCursor(0, 0);
@@ -32,8 +57,34 @@ void setup() {
 }
 
 void loop() {
-  // do everything here
-  tone(buzzerPin, 1000, dashDuration);
-  delay(1000);
-  noTone(buzzerPin);
+  int vertValue = analogRead(VERT_PIN);
+  unsigned long currentMillis = millis();
+
+  if (currentMillis - lastVertChange > vertDebounceDelay) {
+    if (vertValue < 400) {
+      currentLetterIndex--;
+      if (currentLetterIndex < 0) {
+        currentLetterIndex = alphabetLength - 1;
+      }
+      updateLCD();
+      lastVertChange = currentMillis;
+    } else if (vertValue > 600) {
+      currentLetterIndex++;
+      if (currentLetterIndex >= alphabetLength) {
+        currentLetterIndex = 0;
+      }
+      updateLCD();
+      lastVertChange = currentMillis;
+    }
+  }
+
+  if (digitalRead(SEL_PIN) == LOW) {
+    unsigned long currentMillis = millis();
+    if (currentMillis - lastButtonPress > debounceDelay) {
+      selectedString += alphabet[currentLetterIndex];
+      updateLCD();
+      lastButtonPress = currentMillis;
+    }
+  }
 }
+
