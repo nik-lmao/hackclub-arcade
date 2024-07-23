@@ -8,8 +8,8 @@ function doConfetti(){
 }
 
 window.onload = function() {
-    const user = window.location.search.split('?')[1];
-    fetch('http://localhost:3000/list?user=' + user)
+    const user = window.location.search.split('?user=')[1];
+    fetch('http://localhost:3000/list/?user=' + user)
         .then(response => response.json())
         .then(data => {
             if(data.length === 0) {

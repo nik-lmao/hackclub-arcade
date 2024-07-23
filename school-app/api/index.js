@@ -32,38 +32,49 @@ app.post("/new", (req, res) => {
     }
 
     db.serialize(() => {
-        db.get(`SELECT * FROM work WHERE owner = ? AND type = ? AND subject = ? AND description = ? AND until = ?`, [owner, type, subject, description, until], (err, row) => {
-            if (err) {
-                return res.status(500).send('Error checking task');
-            }
-            if (row) {
-                return res.status(409).send('Task already exists');
-            }
-
-            if (both) {
-                db.get(`SELECT * FROM work WHERE owner = ? AND type = ? AND subject = ? AND description = ? AND until = ?`, [0, type, subject, description, until], (err, row) => {
+        if(both) {
+            db.get(`SELECT * FROM work WHERE owner = ? AND type = ? AND subject = ? AND description = ? AND until = ?`, [0, type, subject, description, until], (err, row) => {
+                if (err) {
+                    return res.status(500).send('Error checking task');
+                }
+                if (row) {
+                    return res.status(409).send('Task already exists');
+                }
+                db.get(`SELECT * FROM work WHERE owner = ? AND type = ? AND subject = ? AND description = ? AND until = ?`, [1, type, subject, description, until], (err, row) => {
                     if (err) {
                         return res.status(500).send('Error checking task');
                     }
                     if (row) {
-                        return res.status(409).send('Task already exists for another owner');
+                        return res.status(409).send('Task already exists');
                     }
-
                     db.run(`INSERT INTO work (owner, type, subject, description, until, done) VALUES (?, ?, ?, ?, ?, ?)`, [0, type, subject, description, until, false], (err) => {
                         if (err) {
                             return res.status(500).send('Error creating task');
                         }
                     });
+                    db.run(`INSERT INTO work (owner, type, subject, description, until, done) VALUES (?, ?, ?, ?, ?, ?)`, [1, type, subject, description, until, false], (err) => {
+                        if (err) {
+                            return res.status(500).send('Error creating task');
+                        }
+                    });
                 });
-            }
-
-            db.run(`INSERT INTO work (owner, type, subject, description, until, done) VALUES (?, ?, ?, ?, ?, ?)`, [owner, type, subject, description, until, false], (err) => {
-                if (err) {
-                    return res.status(500).send('Error creating task');
-                }
-                return res.status(201).send('Task created');
             });
-        });
+        }
+        else {
+            db.get(`SELECT * FROM work WHERE owner = ? AND type = ? AND subject = ? AND description = ? AND until = ?`, [owner, type, subject, description, until], (err, row) => {
+                if (err) {
+                    return res.status(500).send('Error checking task');
+                }
+                if (row) {
+                    return res.status(409).send('Task already exists');
+                }
+                db.run(`INSERT INTO work (owner, type, subject, description, until, done) VALUES (?, ?, ?, ?, ?, ?)`, [owner, type, subject, description, until, false], (err) => {
+                    if (err) {
+                        return res.status(500).send('Error creating task');
+                    }
+                });
+            });
+        }
     });
 });
 
