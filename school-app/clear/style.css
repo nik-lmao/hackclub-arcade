@@ -37,24 +37,34 @@ p {
     color: gray;
 }
 
-#clear {
-    border: none;
-    border-radius: 5px;
 
-    padding:10px;
+button {
+    margin-top: 20px;
 
+    color: white;
+    height: 30px;
+    width: 200px;
     font-size: 16px;
 
-    background-color: rgb(255, 73, 73);
+    background-color: rgba(255, 255, 255, 0.1);
 
-    transition: all 0.2s;
-}
+    border: none;
 
-#clear:hover {
-    background-color: rgb(255, 37, 37);
+    border-radius: 5px;
+
     cursor: pointer;
+
+    transition: background-color 0.3s;
 }
 
-#clear:active {
-    background-color: rgb(255, 14, 14);
+button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    background-color: rgba(255, 255, 255, 0.3);
 }

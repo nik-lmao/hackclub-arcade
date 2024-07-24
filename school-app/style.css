@@ -18,6 +18,7 @@ body {
 }
 
 .title {
+    margin-top: 200px;
     font-size: 36px;
     color: rgb(255, 255, 255);
 
@@ -29,8 +30,8 @@ body {
 }
 
 .buttonContainer {
-    margin-top: 50px;
-    margin-bottom: 30px;
+    
+    margin-bottom: 20px;
 }
 
 .button {
@@ -135,4 +136,29 @@ input {
 
 input:focus {
     outline: none;
+}
+
+
+.manageText {
+    margin-top: 50px;
+
+    
+    color: rgb(255, 255, 255);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 200px;
+
+    padding: 10px;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    color: white;
+
+    border-radius: 5px;
 }
