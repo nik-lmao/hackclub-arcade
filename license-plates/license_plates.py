@@ -625,6 +625,38 @@ germanyCities = {
     "ZZ": "Zeitz"
 }
 
+europeCountries = {
+    "A": "Austria",
+    "B": "Belgium",
+    "BG": "Bulgaria",
+    "CY": "Cyprus",
+    "CZ": "Czech Republic",
+    "D": "Germany",
+    "DK": "Denmark",
+    "E": "Spain",
+    "EST": "Estonia",
+    "F": "France",
+    "FIN": "Finland",
+    "GB": "United Kingdom",
+    "GR": "Greece",
+    "H": "Hungary",
+    "HR": "Croatia",
+    "I": "Italy",
+    "IRL": "Ireland",
+    "IS": "Iceland",
+    "L": "Luxembourg",
+    "LT": "Lithuania",
+    "LV": "Latvia",
+    "M": "Malta",
+    "NL": "Netherlands",
+    "P": "Portugal",
+    "PL": "Poland",
+    "RO": "Romania",
+    "S": "Sweden",
+    "SK": "Slovakia",
+    "SLO": "Slovenia",
+}
+
 def germany(letters):
     if len(letters) > 3:
         AttributeError("The length of the license plate is too long")
@@ -636,4 +668,13 @@ def germany(letters):
     
     return "City not found"
 
-print(germany("THW"))
+def europe(letters):
+    if len(letters) > 3:
+        AttributeError("The length of the letters on the blue strip is too long")
+    if len(letters) < 1:
+        AttributeError("The length of the letters on the blue strip is too short")
+
+    if letters in europeCountries:
+        return europeCountries[letters]
+    
+    return "Country not found"
