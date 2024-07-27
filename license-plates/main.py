@@ -1,6 +1,5 @@
 import license_plates as lp
 
-
 def main():
     print("1. - Europe")
     print("2. - Germany")
