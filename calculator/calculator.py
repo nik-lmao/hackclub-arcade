@@ -1,29 +1,45 @@
+def add(x, y):
+    return x + y
 
-print("Simple Calculator")
-print("Select operation:")
-print("1. Add")
-print("2. Subtract")
-print("3. Multiply")
-print("4. Divide")
+def subtract(x, y):
+    return x - y
 
-choice = input("Enter choice(1/2/3/4): ")
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
+def multiply(x, y):
+    return x * y
 
-if choice == "1":
-    result = num1 + num2
-    print(f"Result: {result}")
-elif choice == "2":
-    result = num1 - num2
-    print(f"Result: {result}")
-elif choice == "3":
-    result = num1 * num2
-    print(f"Result: {result}")
-elif choice == "4":
-    if num2 != 0:
-        result = num1 / num2
-        print(f"Result: {result}")
+def divide(x, y):
+    if y != 0:
+        return x / y
     else:
-        print("Cannot divide by zero")
-else:
-    print("Invalid input.")
+        return "Cannot divide by zero"
+
+def main():
+    print("Simple Calculator")
+    print("Select operation:")
+    print("1. Add")
+    print("2. Subtract")
+    print("3. Multiply")
+    print("4. Divide")
+    
+    choice = input("Enter choice(1/2/3/4): ")
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
+    
+    if choice == '1':
+        print(f"Result: {add(num1, num2)}")
+    elif choice == '2':
+        print(f"Result: {subtract(num1, num2)}")
+    elif choice == '3':
+        print(f"Result: {multiply(num1, num2)}")
+    elif choice == '4':
+        print(f"Result: {divide(num1, num2)}")
+    else:
+        print("Invalid input")
+
+if __name__ == "__main__":
+    while True:
+        main()
+        again = input("Do you want to re-start? (y/n)")
+        if again.lower() != "y":
+            break
+        
