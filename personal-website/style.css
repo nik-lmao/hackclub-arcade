@@ -3,9 +3,12 @@ html {
   margin: 0;
 }
 
+
 body {
+  
   background: rgb(18,18,18);
   background: linear-gradient(90deg, rgba(18,18,18,1) 0%, rgba(29,29,29,1) 100%);
+  
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -26,6 +29,7 @@ body {
   border-radius: 50%;
   width: 200px;
   height: 200px;
+  
   margin-bottom: 20px;
   box-shadow: 0 0 100px rgba(255, 255, 255, 0.2);
 }
@@ -65,7 +69,6 @@ body {
   background-color: #004bb5;
 }
 
-
 .popup {
   display: none;
   position: fixed;
@@ -92,4 +95,53 @@ body {
   float: right;
   font-size: 30px;
   cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.interests {
+
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.interests .interest {
+  background-color: #444;
+  color: white;
+
+  border: 2px solid rgb(255,255,255,0.6);
+  
+  padding: 10px;
+  border-radius: 500px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+}
+
+
+.interests .interest:hover {
+  background-color: #555;
+}
+
+
+a {
+
+  font-size: 20px;
+
+  
+  color: #0061fe;
+  text-shadow: 0 0 20px #0061fe;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+a:hover {
+  color: #004bb5;
+  
+}
+
+a:active {
+  color: #0061fe;
 }
