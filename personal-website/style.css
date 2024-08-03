@@ -1,169 +1,178 @@
-html {
-  padding: 0;
-  margin: 0;
+@keyframes fadeIn 
+{
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-body {
-  background: rgb(18, 18, 18);
-  background: linear-gradient(90deg, rgba(18, 18, 18, 1) 0%, rgba(29, 29, 29, 1) 100%);
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+@keyframes slideUp 
+{
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+@keyframes popupFadeIn 
+{
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
 }
 
-.pfp {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 100px rgba(255, 255, 255, 0.2);
+body 
+{
+    background: rgb(18, 18, 18);
+    background: linear-gradient(90deg, rgba(18, 18, 18, 1) 0%, rgba(29, 29, 29, 1) 100%);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: fadeIn 1s ease-in-out;
 }
 
-.text {
-  font-size: 20px;
-  margin-bottom: 20px;
+.container 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: slideUp 1s ease-in-out;
 }
 
-.highlight {
-  color: #0061fe;
-  text-shadow: 0 0 50px #0061fe;
+.pfp 
+{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.2);
+    animation: fadeIn 1s ease-in-out 0.5s forwards;
+    opacity: 0;
 }
 
-.description {
-  color: rgba(255, 255, 255, 0.5);
+.text 
+{
+    font-size: 20px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out 1s forwards;
+    opacity: 0;
 }
 
-.buttons {
-  display: flex;
-  gap: 10px;
+.buttons 
+{
+    display: flex;
+    gap: 10px;
+    animation: fadeIn 1s ease-in-out 1.5s forwards;
+    opacity: 0;
 }
 
-.buttons button {
-  background-color: #0061fe;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 0 50px #0061fe;
-  transition: background-color 0.3s ease;
+.buttons button 
+{
+    background-color: #0061fe;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 50px #0061fe;
+    transition: background-color 0.3s ease;
 }
 
-.buttons button:hover {
-  background-color: #004bb5;
+.buttons button:hover 
+{
+    background-color: #004bb5;
 }
 
-.popup {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  justify-content: center;
-  align-items: center;
+.popup 
+{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
 }
 
-.popup-content {
-  background-color: #333;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 0 50px rgba(255, 255, 255, 0.2);
+.popup.show 
+{
+    display: flex;
+    animation: popupFadeIn 0.5s ease-in-out;
 }
 
-.close-btn {
-  color: #fff;
-  float: right;
-  font-size: 30px;
-  cursor: pointer;
-  margin-bottom: 10px;
+.popup-content 
+{
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.2);
+    animation: popupFadeIn 0.5s ease-in-out;
 }
 
-.interests {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-  margin-top: 20px;
+.close-btn 
+{
+    color: #fff;
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
-.interests .interest {
-  background-color: #444;
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.6);
-  padding: 10px;
-  border-radius: 500px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-  font-size: 14px;
+.interests 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+    opacity: 0;
 }
 
-.interests .interest:hover {
-  background-color: #555;
+.popup.show .interests 
+{
+    animation: fadeIn 0.5s ease-in-out 0.5s forwards;
 }
 
-
-
-.social-icon i {
-
-  text-shadow: 0 0 20px rgb(255,255,255,0.3);
-  
-  font-size: 30px;
-  transition: color 0.2s;
-
-  margin: 5px;
+.interests .interest 
+{
+    background-color: #444;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    border-radius: 500px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    font-size: 14px;
 }
 
-.social-icon.github i {
-  color: #333;
+.interests .interest:hover 
+{
+    background-color: #555;
 }
 
-.social-icon.github:hover i {
-  color: #6e5494;
+.social-icon i 
+{
+    text-shadow: 0 0 20px rgb(255,255,255,0.3);
+    font-size: 30px;
+    transition: color 0.2s;
+    margin: 5px;
 }
 
-.social-icon.instagram i {
-  color: #e4405f;
-}
+.social-icon.github i { color: #333; }
+.social-icon.github:hover i { color: #6e5494; }
 
-.social-icon.instagram:hover i {
-  color: #bc2a8d;
-}
+.social-icon.instagram i { color: #e4405f; }
+.social-icon.instagram:hover i { color: #bc2a8d; }
 
-.social-icon.telegram i {
-  color: #0088cc;
-}
+.social-icon.telegram i { color: #0088cc; }
+.social-icon.telegram:hover i { color: #005a8e; }
 
-.social-icon.telegram:hover i {
-  color: #005a8e;
-}
+.social-icon.spotify i { color: #1db954; }
+.social-icon.spotify:hover i { color: #1ed760; }
 
-.social-icon.spotify i {
-  color: #1db954;
-}
-
-.social-icon.spotify:hover i {
-  color: #1ed760;
-}
-
-.social-icon.steam i {
-  color: #00adee;
-}
-
-.social-icon.steam:hover i {
-  color: #171a21;
-}
+.social-icon.steam i { color: #00adee; }
+.social-icon.steam:hover i { color: #171a21; }
