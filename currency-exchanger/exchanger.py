@@ -9,6 +9,23 @@ api_key = "7bb07e0c2f4841783d826b03"
 # - class with functions
 
 
+def get_exchange_rate(from_currency, to_currency):
+  try:
+    url = f"https://v6.exchangerate-api.com/v6/{api_key}/pair/{from_currency}/{to_currency}"
+    response = requests.get(url)
+    data = response.json()
+    return data["conversion_rate"]
+  except Exception as e:
+    print(f"Error: {e}")
+
+def convert_currency(amount, exchange_rate):
+  try:
+    converted_amount = amount * exchange_rate
+    return converted_amount
+  except Exception as e:
+    print(f"Error: {e}")
+
+
 from_currency = input("Enter the currency you want to convert from: ").upper()
 
 to_currency = input("Enter the currency you want to convert to: ").upper()
@@ -16,24 +33,8 @@ to_currency = input("Enter the currency you want to convert to: ").upper()
 amount = float(input("Enter the amount you want to convert: "))
 
 
-url = f"https://v6.exchangerate-api.com/v6/{api_key}/latest/{from_currency}"
+exchange_rate = get_exchange_rate(from_currency, to_currency)
 
-try:
-  
-  r = requests.get(url)
-  data = r.json()
-  
-  if data["result"] == "error":
-    print("Invalid currency code. Please try again.")
-    
-  else:
-    exchange_rate = data["conversion_rates"].get(to_currency)
-    if exchange_rate is None:
-      print("Invalid target currency code. Please try again.")
-    else:
-      converted_amount = amount * exchange_rate
-      print(f"{amount} {from_currency} is equal to {converted_amount} {to_currency}")
+converted_amount = convert_currency(amount, exchange_rate)
 
-except Exception as e:
-  print("An error occurred. Please try again.")
-  print(e)
+print(f"{amount} {from_currency} is equal to {converted_amount} {to_currency}")
