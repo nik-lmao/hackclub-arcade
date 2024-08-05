@@ -22,7 +22,7 @@ A Python-based currency exchanger that allows you to convert between different c
    pip install requests python-dotenv
    ```
 
-2. Create a `.env` file in the project directory and add your API key:
+2. Create a `.env` file in the project directory and add your API key. You can get your personal API key from [this](https://www.exchangerate-api.com/) webpage.
 
    ```dotenv
    EXCHANGE_RATE_API_KEY=your_api_key_here
