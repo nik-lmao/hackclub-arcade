@@ -4,6 +4,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+api_key = os.getenv("EXCHANGE_RATE_API_KEY")
+
 class CurrencyConverter:
     def __init__(self):
         self.api_key = os.getenv("EXCHANGE_RATE_API_KEY")
@@ -40,20 +42,49 @@ class CurrencyConverter:
             print(f"Error: {e}")
             return None
 
+
+message = """
+Welcome to the Currency Exchanger!
+With this simple Python script you can calculate how much a currency is worth in another!
+
+
+"""
+
+codes_message = f"""
+For all the valid currency codes please take a look at: 
+https://v6.exchangerate-api.com/v6/{api_key}/codes
+"""
+
+invalid_message = """
+Looks like you haven't set your API key yet. To prevent further errors please check your API key and re-open the exchanger!
+"""
+
 def main():
+    if api_key != "":
+        print(message + codes_message)
+        input("Press enter to continue...")
+    else:
+        print(message + invalid_message)
+        input("Press enter to exit...")
+        return
+    os.system("cls" if os.name == "nt" else "clear")
     try:
         converter = CurrencyConverter()
     except ValueError as e:
         print(e)
         return
-
+    
     try:
         from_currency = input("Enter the currency you want to convert from (e.g., USD): ").upper()
         to_currency = input("Enter the currency you want to convert to (e.g., EUR): ").upper()
         amount = float(input("Enter the amount you want to convert: "))
-
+        os.system("cls" if os.name == "nt" else "clear")
+        if len(from_currency) != 3 or len(to_currency) != 3:
+            print("Invalid currency code.")
+            return
+            
         exchange_rate = converter.get_exchange_rate(from_currency, to_currency)
-
+        
         if exchange_rate:
             converted_amount = converter.convert_currency(amount, exchange_rate)
             if converted_amount is not None:
