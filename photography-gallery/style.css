@@ -31,6 +31,7 @@ header {
   cursor: pointer;
   
   border: 2px solid #fff;
+  border-radius: 10px;
   
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   
@@ -81,4 +82,11 @@ header {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+.footer {
+  color: gray;
+  text-align: center;
+  padding: 1rem 0;
+  
 }
