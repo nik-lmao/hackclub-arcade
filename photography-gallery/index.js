@@ -1,6 +1,6 @@
 const gallery = document.getElementById("gallery");
 
-// URL/photo?
+// URL/photo/API request?
 const choice = 0;
 
 const galleryItems = [
@@ -17,6 +17,7 @@ galleryNames = [
     "photo2.jpg"
 ]
 
+const url = "https://example.com"
 
 window.onload = function(){
     if(choice == 0){
@@ -39,6 +40,24 @@ window.onload = function(){
             gallery.appendChild(galleryItem);
             
         })
+    }
+
+    // For the API request to function, please create a working API endpoint and set the variable url to it. Make sure that the API response includes the image URL.
+    
+    if (choice == 2) {
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                data.forEach(item => {
+                    const galleryItem = document.createElement("div");
+                    galleryItem.className = "gallery-item";
+                    const img = document.createElement("img");
+                    img.src = item.imageUrl;
+                    galleryItem.appendChild(img);
+                    gallery.appendChild(galleryItem);
+                });
+            })
+            .catch(error => console.error('Error fetching gallery items:', error));
     }
 }
 
