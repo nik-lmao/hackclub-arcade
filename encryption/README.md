@@ -1,4 +1,8 @@
-# Encryption Methods
+# 🔣 | Encryption Methods
+
+I learnt a lot about encryption methods because my sister and I wanted to have a secret "language". I created notes and learnt more about the Vigenère-Cipher.
+
+## 📝 | Note Transcription
 
 `notes.jpeg` transcription:
 ```
@@ -44,7 +48,7 @@
    - Contra: Kenntnis des Schlüssels erforderlich
 ```
 
-## Own Encryption
+## ⭐️ | Own Encryption
 
 I decided to use one of the listed encryption methods with my sister for fun. We decided to use the [Vigenère-Cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher) encryption method but simplified it.
 
@@ -52,7 +56,7 @@ If you're interested, instead of using all the letters from the alphabet, we ins
 
 Check `table.jpeg` to see the table.
 
-## Example
+##  🕹️ | Example
 
 Secret Number Code: 1234
 Plain Text: "Hello"
@@ -68,7 +72,7 @@ o -> p (shift letters by 1 again)
 "Hello" -> "Igopp"
 Ciphertext: "Igopp"
 
-# Questions
+## ❓ | Questions
 
 If you have any questions please ask it in my DMs on the Hackclub Slack (where you probably came from) or add me on Discord: @nikitafrfr
 
