@@ -72,6 +72,10 @@ o -> p (shift letters by 1 again)
 "Hello" -> "Igopp"
 Ciphertext: "Igopp"
 
+## 🖥️ | Python Script
+
+I created a Python script that can encrypt and decrypt messages with a key. Check out `main.py`!
+
 ## ❓ | Questions
 
 If you have any questions please ask it in my DMs on the Hackclub Slack (where you probably came from) or add me on Discord: @nikitafrfr
