@@ -24,6 +24,8 @@ function decrypt(cipherText, key) {
   return decryptedText.join('');
 }
 
+// Button Click Functions
+
 function encryptMessage() {
   let message = document.getElementById('message').value.toLowerCase();
   let key = document.getElementById('key').value;
@@ -38,8 +40,7 @@ function decryptMessage() {
   document.getElementById('result').value = decryptedText;
 }
 
-
-
+// Background
 
 function generateRandomText(length) {
   const characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
@@ -63,5 +64,9 @@ function createBackgroundText() {
 }
 
 window.onload = function(){
+  createBackgroundText();
+}
+
+window.onmousemove = function(){
   createBackgroundText();
 }

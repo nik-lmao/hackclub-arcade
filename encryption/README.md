@@ -1,6 +1,40 @@
 # 🔣 | Encryption Methods
 
-I learnt a lot about encryption methods because my sister and I wanted to have a secret "language". I created notes and learnt more about the Vigenère-Cipher.
+I learnt a lot about encryption methods because my sister and I wanted to have a secret "language". I created notes (take a look at ´notes.jpeg´ or at the transcription at the bottom of this README), learnt more about the Vigenère-Cipher, created an own version of the Cipher and coded a Python Script and Webpage for easier encrypting/decrypting.
+
+## ⭐️ | Own Encryption
+
+I decided to use one of the listed encryption methods with my sister for fun. We decided to use the [Vigenère-Cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher) encryption method but simplified it.
+
+If you're interested, instead of using all the letters from the alphabet, we instead used numbers from 0 to 9.
+
+Check `table.jpeg` to see the table.
+
+##  🕹️ | Example
+
+Secret Number Code: 1234
+Plain Text: "Hello"
+
+```
+H -> I (shift letters by 1)
+e -> g (shift letters by 2)
+l -> o (shift letters by 3)
+l -> p (shift letters by 4)
+o -> p (shift letters by 1 again)
+```
+
+"Hello" -> "Igopp"
+Ciphertext: "Igopp"
+
+## 🖥️ | Python Script
+
+I created a Python script that can encrypt and decrypt messages with a key. Check out `main.py`!
+
+## 🌍 | Webpage
+
+I also created a webpage that does the exact same as the Python Script. Take a look at the subfolder ´webpage´ for that.
+
+The page is already deployed at [this page](https://hackclub.nik-dev.eu/encryption/webpage/). There you can try out the encryption and decryption function without needing to download anything.
 
 ## 📝 | Note Transcription
 
@@ -47,34 +81,6 @@ I learnt a lot about encryption methods because my sister and I wanted to have a
    - Pro: Sicher bei guter Implementierung  
    - Contra: Kenntnis des Schlüssels erforderlich
 ```
-
-## ⭐️ | Own Encryption
-
-I decided to use one of the listed encryption methods with my sister for fun. We decided to use the [Vigenère-Cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher) encryption method but simplified it.
-
-If you're interested, instead of using all the letters from the alphabet, we instead used numbers from 0 to 9.
-
-Check `table.jpeg` to see the table.
-
-##  🕹️ | Example
-
-Secret Number Code: 1234
-Plain Text: "Hello"
-
-```
-H -> I (shift letters by 1)
-e -> g (shift letters by 2)
-l -> o (shift letters by 3)
-l -> p (shift letters by 4)
-o -> p (shift letters by 1 again)
-```
-
-"Hello" -> "Igopp"
-Ciphertext: "Igopp"
-
-## 🖥️ | Python Script
-
-I created a Python script that can encrypt and decrypt messages with a key. Check out `main.py`!
 
 ## ❓ | Questions
 
