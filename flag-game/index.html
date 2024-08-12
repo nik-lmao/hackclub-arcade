@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flag Guessing Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Flag Guessing Game</h1>
+    <div class="game-box">
+      <img id="flag-image" src="https://flagsapi.com/BE/flat/64.png" alt="Flag">
+      <input type="text" id="country-input" placeholder="Enter the name of this country...">
+      <button id="dont-know-btn">I don't know</button>
+    </div>
+    
+    <div class="score">
+      <h2>Score</h2>
+      <p>✅ <span id="know">Loading...</span></p>
+      <p>❌ <span id="dont-know">Loading...</span></p>
+      <p>🧮 <span id="ratio">Loading...</span></p>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

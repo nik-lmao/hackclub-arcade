@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ece9e6, white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.game-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 64px; 
+  height: 64px; 
+  border-radius: 15px;
+  margin-bottom: 20px;
+
+  padding: 5px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  padding: 15px;
+  font-size: 1.2em;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  border: 2px solid rgb(0,0,0,0.1);
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #0066ff;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #0061fe;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056d6;
+}
+
+button:active {
+  background-color: #0042a9;
+}
+
+.score {
+  margin-top: 30px;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+}
+
+p {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  input, button {
+    font-size: 1em;
+  }
+}
