@@ -10,6 +10,10 @@ I decided to participate at Hackclub Arcade and built multiple simple and more c
 
 I had a lot of fun working on different projects. Over the last months I learnt more about interesting topics, tried out new things and was motivated all the time. (Probably because of the items in the shop ;))
 
+## 📕 | Rule Change
+
+Since the rules changed, I'm not allowed to put every project into one Github Repository anymore. All commits will go to the newly created ones. I'll still upload the project for the web hosting through Github Pages though.
+
 ## 📑 | Arcade Website
 
 Visit the [Hackclub Arcade Website!](https://hackclub.com/arcade/)
