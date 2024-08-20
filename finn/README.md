@@ -4,7 +4,7 @@ This projects contains a website for my dog named Finn. It features a dark mode 
 
 ## 💾 | Installation
 
-To install this project, just download the `index.html`, `style.css` and `index.js` file, aswell as the `images` folder and the `icon.png` file. . After open the project in your browser and take a look at it.
+To install this project, just download all files in this folder. After open the project in your browser and take a look at it.
 
 <br>
 
