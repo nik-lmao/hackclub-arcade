@@ -12,7 +12,7 @@ I had a lot of fun working on different projects. Over the last months I learnt 
 
 ## 📕 | Rule Change
 
-Since the rules changed, I'm not allowed to put every project into one Github Repository anymore. All commits will go to the newly created ones. I'll still upload the project for the web hosting through Github Pages though.
+Since the rules changed, I'm not allowed to put every project into one Github Repository anymore. From now on, all commits will go to the newly created ones. I'll still upload the project for the web hosting through Github Pages though.
 
 ## 📑 | Arcade Website
 
