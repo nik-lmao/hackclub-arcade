@@ -1,6 +1,10 @@
-# 📸 | Photography Gallery
+# 📑 | Online Text Editor
 
-A simple HTML, CSS and JS project for displaying multiple photos on a webpage.
+First Hackclub Project!!!
+
+<br>
+
+This project contains an online text editor. You can upload, edit and download text files.
 
 ## 💾 | Installation
 
@@ -8,7 +12,7 @@ To install this project, just download the `index.html`, `style.css` and `index.
 
 <br>
 
-Alternatively you can access the website [here](https://hackclub.nik-dev.eu/photography-gallery/)
+Alternatively you can access the website [here](https://hackclub.nik-dev.eu/online-text-editor/)
 
 ## ✉️ | Questions
 

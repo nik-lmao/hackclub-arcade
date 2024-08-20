@@ -1,6 +1,6 @@
-# 📸 | Photography Gallery
+# 🖥️ |  Password Generator
 
-A simple HTML, CSS and JS project for displaying multiple photos on a webpage.
+This project contains a password generator.
 
 ## 💾 | Installation
 
@@ -8,7 +8,7 @@ To install this project, just download the `index.html`, `style.css` and `index.
 
 <br>
 
-Alternatively you can access the website [here](https://hackclub.nik-dev.eu/photography-gallery/)
+Alternatively you can access the website [here](https://hackclub.nik-dev.eu/password-generator/)
 
 ## ✉️ | Questions
 
