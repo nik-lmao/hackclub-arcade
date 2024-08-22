@@ -1,17 +1,19 @@
-# 📐 | Area converter
+# 📏 | Area Converter
 
-This projects contains a simple area converter. It can convert different kinds of units into others. 
+A Python script to convert areas between different units. Units are defined in `converter.py` from lines 1-12.
 
-<br>
+## ⚙️ | Installation
 
-If you want to know, which units are supported, please take a look at the `converter.py` file. Lines `1-12` should contain conversion factors of the supported units.
+1. Clone the repository.
+2. Ensure you have Python installed on your system.
+3. Run `converter.py` using Python.
 
-## 💾 | Installation
+## 🖼️ | Screenshot
 
-To install this project, just download the `converter.py` file and run it. This project doesn't require any additional libraries.
+![Screenshot](screenshot.jpeg)
 
-## ✉️ | Questions
+## 💌 | Contact
 
-If you have any questions you can contact me on Discord: @nikitafrfr
+If you have any questions, you can contact me on Discord: @nikitafrfr.
 
 If you came here from the Hackclub Slack, you can just contact me there :)

@@ -1,13 +1,20 @@
-# 🏎️ | Racing game
+# 🏎️ | Arduino Uno Racing Game
 
-This projects contains a simple racing game for an Arduino. (I used an Arduino UNO). In the game you control a car and try to avoid obstacles.
+A racing game built with Arduino Uno where you use a joystick to drive a car and dodge obstacles.
 
-## 💾 | Installation
+## ⚙️ | Installation
 
-If you want to replicate this project, take a look at the setup in the ´progress´ folder and after just copy the code in ´translator.ino´ onto your Arduino. Run the script and you should be good to go!
+1. Clone the repository.
+2. Open the `progress/` folder for setup instructions.
+3. Upload `game.ino` to your Arduino Uno.
+4. Run the program on your Arduino to start the game.
 
-## ✉️ | Questions
+## 🖼️ | Screenshot
 
-If you have any questions you can contact me on Discord: @nikitafrfr
+![Screenshot](progress/session%201.jpg)
+
+## 💌 | Contact
+
+If you have any questions, you can contact me on Discord: @nikitafrfr.
 
 If you came here from the Hackclub Slack, you can just contact me there :)

@@ -1,9 +1,14 @@
-# ⚙️ | Blender Library
+# 🛠️ | Blender Projects and Stuff
 
-This projects contains a few blender projects.
+A collection of various Blender projects, showcasing different models, designs, and techniques. This repository includes multiple Blender files for you to explore and use in your own projects.
 
-## ✉️ | Questions
+## ⚙️ | Installation
 
-If you have any questions you can contact me on Discord: @nikitafrfr
+1. Clone the repository.
+2. Open the Blender files in this repository using Blender to view the projects.
+
+## 💌 | Contact
+
+If you have any questions, you can contact me on Discord: @nikitafrfr.
 
 If you came here from the Hackclub Slack, you can just contact me there :)

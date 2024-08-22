@@ -2,7 +2,7 @@
 
 This projects contains a blackjack game. You can play a simplified version of classic blackjack.
 
-## 💾 | Installation
+## ⚙️ | Installation
 
 To install this project, just download the `game.py` file and run it. This project doesn't require any additional libraries.
 
