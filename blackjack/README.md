@@ -1,13 +1,17 @@
-# 💰 | Blackjack Game
+# ♠️ | Blackjack Game
 
-This projects contains a blackjack game. You can play a simplified version of classic blackjack.
+A simplified version of Blackjack implemented in Python.
 
 ## ⚙️ | Installation
 
-To install this project, just download the `game.py` file and run it. This project doesn't require any additional libraries.
+To run this game locally, download the `game.py` file. Run it using Python to start the game.
+
+## 🖼️ | Screenshot
+
+![Screenshot](screenshot.jpeg)
 
 ## ✉️ | Questions
 
-If you have any questions you can contact me on Discord: @nikitafrfr
+If you have any questions, you can contact me on Discord: @nikitafrfr.
 
-If you came here from the Hackclub Slack, you can just contact me there :)
+If you came here from the Hackclub Slack, you can reach out to me there as well :)
