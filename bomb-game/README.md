@@ -17,7 +17,7 @@ Alternatively, you can play the game [here](https://hackclub.nik-dev.eu/bomb-gam
 
 ## 🖼️ | Screenshot
 
-![Screenshot](screenshot.jpeg)
+![Screenshot](screenshot.png)
 
 ## ✉️ | Questions
 
