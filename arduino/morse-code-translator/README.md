@@ -1,13 +1,20 @@
-# 📜 | Morse Code Translator
+# 🔄 | Arduino Morse Code Translator
 
-This projects contains a morse code translator for an Arduino. (I used an Arduino UNO).
+Translates normal text into Morse code using a joystick, LED, and a buzzer. Built with Arduino.
 
-## 💾 | Installation
+## ⚙️ | Installation
 
-If you want to replicate this project, take a look at the setup in the ´progress´ folder and after just copy the code in ´translator.ino´ onto your Arduino. Run the script and you should be good to go!
+1. Clone the repository.
+2. Open the `progress/` folder for setup instructions.
+3. Upload `translator.ino` to your Arduino Uno.
+4. Run the program on your Arduino.
 
-## ✉️ | Questions
+## 🖼️ | Screenshot
 
-If you have any questions you can contact me on Discord: @nikitafrfr
+![Screenshot](progress/session%204.jpg)
+
+## 💌 | Contact
+
+If you have any questions, you can contact me on Discord: @nikitafrfr.
 
 If you came here from the Hackclub Slack, you can just contact me there :)
