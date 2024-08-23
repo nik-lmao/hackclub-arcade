@@ -26,7 +26,7 @@ Alternatively, you can access the web version of the word counter [here](https:/
 
 ## 🖼️ | Screenshot
 
-![Screenshot](screenshot.jpeg)
+![Screenshot](screenshot.png)
 
 ## ✉️ | Questions
 
