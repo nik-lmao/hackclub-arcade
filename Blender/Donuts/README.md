@@ -4,8 +4,8 @@ A project following the Blender Guru YouTube series on creating realistic donuts
 
 ## ⚙️ | Installation
 
-1. Clone the repository.
-2. Open `donuts.blend` in Blender to view the donut models created throughout the series.
+1. Download the `donuts.blend` file from [BlendSwap](https://blendswap.com/blend/31643)
+2. Open `donuts.blend` in Blender to view the donut model.
 
 ## 🖼️ | Screenshot
 

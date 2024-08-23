@@ -4,8 +4,10 @@ A project following the Blender Guru YouTube series on creating realistic donuts
 
 ## ⚙️ | Installation
 
-1. Clone the repository.
+1. Download the `donuts.blend` file from [BlendSwap](https://blendswap.com/blend/31644) and open it to view the final project.
 2. Open the Blender files located in the `session 1`, `session 2`, ..., `session 7` folders to view the progress from each session.
+
+The first session also includes the monkey model. You can download it [here](https://blendswap.com/blend/31645)
 
 ## 🖼️ | Screenshot
 

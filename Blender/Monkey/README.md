@@ -4,7 +4,7 @@ A Blender project featuring a monkey model wearing a yellow Chinese hat. Include
 
 ## ⚙️ | Installation
 
-1. Clone the repository.
+1. Download the `monkey.blend` file from [BlendSwap](https://blendswap.com/blend/31645)
 2. Open `monkey.blend` in Blender to view the monkey model and the hat.
 
 ## 🖼️ | Screenshot
