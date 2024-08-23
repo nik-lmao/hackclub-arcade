@@ -1,21 +1,22 @@
-# 📑 | Online Text Editor
+# 📝 | Online Text Editor
 
-First Hackclub Project!!!
+A simple online tool to upload, edit, and download text files. Built with HTML, CSS, and JavaScript.
 
-<br>
+## ⚙️ | Installation
 
-This project contains an online text editor. You can upload, edit and download text files.
+1. Clone the repository.
+2. Open `index.html` in your browser.
 
-## 💾 | Installation
+## 🌐 | Try it Online
 
-To install this project, just download the `index.html`, `style.css` and `index.js` file. After open the project in your browser and take a look at it.
+Alternatively, you can test it [here](https://nik-lmao.github.io/small-projects/online-text-editor/).
 
-<br>
+## 🖼️ | Screenshot
 
-Alternatively you can access the website [here](https://hackclub.nik-dev.eu/online-text-editor/)
+![Screenshot](screenshot.jpeg)
 
-## ✉️ | Questions
+## 💌 | Contact
 
-If you have any questions you can contact me on Discord: @nikitafrfr
+If you have any questions, you can contact me on Discord: @nikitafrfr.
 
 If you came here from the Hackclub Slack, you can just contact me there :)

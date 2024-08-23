@@ -1,14 +1,17 @@
-# ⌨️ | Morse Code Tester
+# 📜 | Morse Code Game
 
-This project contains a morse code learning app written in Python. You're given a message in morse code and have to translate it to the normal alphabet.
+This project is a Morse Code game where you guess a random string of 5 letters based on its Morse Code representation. The game clears the screen, shows a Morse Code string, and prompts you to guess the original string.
 
-## 💾 | Installation
+## ⚙️ | Installation
 
-To install this project, download the `main.py` file and run it. This project doesn't require any additional libraries.
+To run this game, download the `main.py` file. Ensure you have Python installed on your system. You can then run the game using the command `python main.py`.
 
+## 🖼️ | Screenshot
+
+![Screenshot](screenshot.png)
 
 ## ✉️ | Questions
 
-If you have any questions you can contact me on Discord: @nikitafrfr
+If you have any questions, you can contact me on Discord: @nikitafrfr.
 
-If you came here from the Hackclub Slack, you can just contact me there :)
+If you came here from the Hackclub Slack, you can reach out to me there as well :)

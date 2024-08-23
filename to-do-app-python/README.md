@@ -1,13 +1,24 @@
-# 📑 | To-Do App
+# 🗒️ | To-Do App
 
-This project contains a to-do app written in Python. It can save to-do's into a JSON file so the to-do's don't get lost.
+This project is a simple To-Do application that allows you to manage tasks. You can add, view, remove, and mark tasks as completed.
 
-## 💾 | Installation
+## ⚙️ | Installation
 
-To install this project, download the `to-do.py` file and run it. This project does not require any additional libraries.
+1. **Setup:** Download the `to-do.py` file.
+
+2. **Run the Application:**
+   - Ensure you have Python installed on your machine.
+   - Open a terminal or command prompt.
+   - Navigate to the directory containing `to-do.py`.
+   - Run the script using the command: `python to-do.py`.
+
+## 🖼️ | Screenshots
+
+![Screenshot](screenshot1.png)
+![Screenshot](screenshot2.png)
 
 ## ✉️ | Questions
 
-If you have any questions you can contact me on Discord: @nikitafrfr
+If you have any questions, you can contact me on Discord: @nikitafrfr
 
 If you came here from the Hackclub Slack, you can just contact me there :)

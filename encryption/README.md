@@ -32,7 +32,9 @@ I created a Python script that can encrypt and decrypt messages with a key. Chec
 
 ## 🌍 | Webpage
 
-I also created a webpage that does the exact same as the Python Script. Take a look at the subfolder ´webpage´ for that.
+I also created a webpage that does the exact same as the Python Script. Take a look at the subfolder `webpage` for that. To open the wepage locally, open the HTML file in your browser.
+
+<br>
 
 The page is already deployed at [this page](https://hackclub.nik-dev.eu/encryption/webpage/). There you can try out the encryption and decryption function without needing to download anything.
 
@@ -81,6 +83,15 @@ The page is already deployed at [this page](https://hackclub.nik-dev.eu/encrypti
    - Pro: Sicher bei guter Implementierung  
    - Contra: Kenntnis des Schlüssels erforderlich
 ```
+
+## 🖼️ | Screenshots
+
+Screenshots of notes and the encryption table:
+
+<br>
+
+![Screenshot](notes.jpeg)
+![Screenshot](table.png)
 
 ## ❓ | Questions
 

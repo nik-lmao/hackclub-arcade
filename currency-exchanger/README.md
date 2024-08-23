@@ -34,6 +34,12 @@ A Python-based currency exchanger that allows you to convert between different c
    python exchanger.py
    ```
 
+## 🖼️ | Screenshots
+
+![Screenshot](screenshot1.png)
+![Screenshot](screenshot2.png)
+![Screenshot](screenshot3.png)
+
 ## 📄 License
 
 This project is licensed under the MIT License.

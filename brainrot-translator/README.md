@@ -1,13 +1,18 @@
-# 💩 | Brainrot Translator
+# 🧠 | Brainslot Translator
 
-This projects contains a brainslot translator which translates normal text to brainrot by replacing nouns, verbs and adjectives with brainrot ones.
+This project includes a Brainslot Translator that converts standard text into brainrot by replacing common nouns, verbs, and adjectives with their brainrot counterparts. It utilizes multiple text files for the translation process.
 
-## 💾 | Installation
+## ⚙️ | Installation
 
-To install this project, just download all the files in this folder. After that you can just open `translator.py` and enter your text. This project does not require any additional libraries.
+To use this translator, download the `translator.py` file along with the accompanying text files. Finally run the `translator.py` script.
+
+## 🖼️ | Screenshots
+
+![Screenshot](screenshot1.png)
+![Screenshot](screenshot2.png)
 
 ## ✉️ | Questions
 
-If you have any questions you can contact me on Discord: @nikitafrfr
+If you have any questions, you can contact me on Discord: @nikitafrfr.
 
-If you came here from the Hackclub Slack, you can just contact me there :)
+If you came here from the Hackclub Slack, you can reach out to me there as well :)

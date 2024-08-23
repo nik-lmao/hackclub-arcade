@@ -1,17 +1,27 @@
-# 🐶 | Finn's Website (my dog)
+# 🐾 | Finn's Website
 
-This projects contains a website for my dog named Finn. It features a dark mode design and a few nice animations.
+This project contains a website dedicated to my dog, Finn. The site features a dark mode design and includes a few animations for a nice experience. 
 
-## 💾 | Installation
+## ⚙️ | Installation
 
-To install this project, just download all files in this folder. After open the project in your browser and take a look at it.
+To set up this website, download the following files:
+- `index.html`
+- `style.css`
+- `index.js`
+- `icon.png`
 
-<br>
+Also, be sure to include the images from the `images/` subfolder.
 
-Alternatively you can access the website [here](https://hackclub.nik-dev.eu/finn/)
+## 🌐 | Try it Online
+
+Alternatively, you can view the website [here](https://hackclub.nik-dev.eu/finn/).
+
+## 🖼️ | Screenshot
+
+![Screenshot](screenshot.png)
 
 ## ✉️ | Questions
 
-If you have any questions you can contact me on Discord: @nikitafrfr
+If you have any questions, you can contact me on Discord: @nikitafrfr.
 
-If you came here from the Hackclub Slack, you can just contact me there :)
+If you came here from the Hackclub Slack, you can reach out to me there as well :)

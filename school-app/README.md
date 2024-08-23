@@ -1,14 +1,23 @@
-# 📖 | School App
+# 🏫 | School App
 
-This projects contains a school app with options for saving homeworks and to-do's and retrieving them from different locations/devices. (unsecure)
+This project features a school management app with a web interface and an Express API.
 
-## 💾 | Installation
+## ⚙️ | Installation
 
-To install this project, just download the entire project folder. For the API, install all required modules with npm and run it by typing `node .` in the `api/` folder. You can open the website in the browser and access the API.
+1. **Web Pages:** Download all the HTML, CSS, and JavaScript files, as well as the subfolders. Open the `index.html` file in your web browser to view the app.
 
-<br>
+2. **Express API:**
+   - Navigate to the `api/` subfolder.
+   - Install dependencies by running `npm install`.
+   - Start the server using `npm start`.
 
-Alternatively you can access the front-end of the school app [here](https://hackclub.nik-dev.eu/school-app/)
+## 🌐 | Try it Online
+
+Alternatively you can also access the app [here](https://hackclub.nik-dev.eu/school-app/). (front-end only!)
+
+## 🖼️ | Screenshot
+
+![Screenshot](screenshot.png)
 
 ## ✉️ | Questions
 

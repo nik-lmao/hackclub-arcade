@@ -3,13 +3,10 @@ const gallery = document.getElementById("gallery");
 // URL/photo/API request?
 const choice = 0;
 
+// Replace the URLs with the URLs of the images you want to display in the gallery
 const galleryItems = [
-    "https://cdn.discordapp.com/attachments/1108789026992959610/1268673430215983145/IMG_2445.jpeg?ex=66b33674&is=66b1e4f4&hm=00b57351e333042c8de981e204ba0329ed2b573d3b72c40b173f9dd1b5b53d04&",
-    "https://cdn.discordapp.com/attachments/1108789026992959610/1268673430215983145/IMG_2445.jpeg?ex=66b33674&is=66b1e4f4&hm=00b57351e333042c8de981e204ba0329ed2b573d3b72c40b173f9dd1b5b53d04&",
-    "https://cdn.discordapp.com/attachments/1268677485617483858/1270375944749580360/IMG_2625.jpeg?ex=66b3794b&is=66b227cb&hm=cbd6b82358dfd0c2a485772e320aa9e728f23267146e6bfe12a8cb2658e286c8&",
-    "https://cdn.discordapp.com/attachments/1268677485617483858/1270375944749580360/IMG_2625.jpeg?ex=66b3794b&is=66b227cb&hm=cbd6b82358dfd0c2a485772e320aa9e728f23267146e6bfe12a8cb2658e286c8&",
-    "https://cdn.discordapp.com/attachments/1268677485617483858/1270375944749580360/IMG_2625.jpeg?ex=66b3794b&is=66b227cb&hm=cbd6b82358dfd0c2a485772e320aa9e728f23267146e6bfe12a8cb2658e286c8&",
-    "https://cdn.discordapp.com/attachments/1268677485617483858/1270375944749580360/IMG_2625.jpeg?ex=66b3794b&is=66b227cb&hm=cbd6b82358dfd0c2a485772e320aa9e728f23267146e6bfe12a8cb2658e286c8&"
+    "https://images.squarespace-cdn.com/content/v1/53c631e4e4b0c4d68989cbef/1410108841601-8DJHKTK2RL5Z3DCN1ZGI/DSC1276.jpg",
+    "https://images.pexels.com/photos/10936397/pexels-photo-10936397.jpeg"
 ];
 
 galleryNames = [

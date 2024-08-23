@@ -1,17 +1,26 @@
-# 👤 | Personal Website
+# 🌐 | Personal Website
 
-This project contains my personal website.
+This project is a personal website showcasing information about me. It features a user-friendly interface.
 
-## 💾 | Installation
+## ⚙️ | Installation
 
-To install this project, just download the `index.html`, `style.css` and `index.js` file. After open the project in your browser and take a look at it.
+To set up this personal website, download the following files:
+- `index.html`
+- `style.css`
+- `index.js`
 
-<br>
+Open the `index.html` file in your browser to view the website.
 
-Alternatively you can access the website [here](https://hackclub.nik-dev.eu/personal-website/)
+## 🌐 | Try it Online
+
+Alternatively, you can access the website [here](https://hackclub.nik-dev.eu/personal-website/).
+
+## 🖼️ | Screenshot
+
+![Screenshot](screenshot.png)
 
 ## ✉️ | Questions
 
-If you have any questions you can contact me on Discord: @nikitafrfr
+If you have any questions, you can contact me on Discord: @nikitafrfr.
 
-If you came here from the Hackclub Slack, you can just contact me there :)
+If you came here from the Hackclub Slack, you can reach out to me there as well :)

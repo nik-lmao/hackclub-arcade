@@ -5,7 +5,8 @@ A Blender project showcasing a room design. Includes the `untitled.blend` file w
 ## ⚙️ | Installation
 
 1. Clone the repository.
-2. Open `untitled.blend` in Blender to view the room design.
+2. The final `untitled.blend` file is too big for uploading to GitHub. Download it [on Mediafire](https://www.mediafire.com/file/exa47k3tk7cat66/untitled.blend/file) 
+3. Open the downloaded `untitled.blend` file to view the room design.
 
 ## 🖼️ | Screenshot
 

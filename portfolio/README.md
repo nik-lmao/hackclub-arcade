@@ -1,17 +1,39 @@
-# 👤 | Example Portfolio
+# 🎨 | Portfolio
 
-This projects contains an example for a portfolio with a working API.
+This project is a personal portfolio showcasing various works and projects. It includes both frontend and backend components to provide a comprehensive view of my work.
 
-## 💾 | Installation
+## ⚙️ | Installation
 
-To install this project, just download the entire project folder. For the API, install all required modules with npm and run it by typing `node .` in the `api/` folder. You can open the website in the browser and access the API.
+To set up this portfolio, follow these steps:
 
-<br>
+1. **Frontend Setup:**
+   Download the following files from the main folder:
+   - `index.html`
+   - `style.css`
+   - `index.js`
 
-Alternatively you can access the front-end of the guestbook app [here](https://hackclub.nik-dev.eu/portfolio/)
+2. **Backend Setup:**
+   Download all files from the `api/` subfolder.
+
+3. **Install Dependencies:**
+   Navigate to the `api/` folder in your terminal and run `npm install` to install the required npm libraries.
+
+4. **Run the Backend:**
+   Start the backend server by running `node .` in the `api/` folder.
+
+5. **View the Portfolio:**
+   Open the `index.html` file in your browser to view the portfolio.
+
+## 🌐 | Try it Online
+
+You can access the portfolio [here](https://hackclub.nik-dev.eu/portfolio/). (contact page will **not** work)
+
+## 🖼️ | Screenshot
+
+![Screenshot](screenshot.png)
 
 ## ✉️ | Questions
 
-If you have any questions you can contact me on Discord: @nikitafrfr
+If you have any questions, you can contact me on Discord: @nikitafrfr.
 
-If you came here from the Hackclub Slack, you can just contact me there :)
+If you came here from the Hackclub Slack, you can reach out to me there as well :)

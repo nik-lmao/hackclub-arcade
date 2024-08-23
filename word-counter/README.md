@@ -1,20 +1,35 @@
 # 📝 | Word Counter
 
-
-This project contains a username generator which can generate over 10 million unique names.
+This project contains a tool for counting words, sentences, characters, and unique words in a given text. It is available both as a Python script and a web application.
 
 ## 💾 | Installation
 
-To work with the Python script, download the `counter.py` file and run it. 
+### Python Script
 
-To install this project, just download the `index.html`, `style.css` and `index.js` file. After open the project in your browser and take a look at it.
+1. Download the following file:
+   - `counter.py`
 
-<br>
+2. Run the `counter.py` file to start the application. You can enter text directly into the console to get the counts for words, sentences, characters, and unique words.
 
-Alternatively you can access the website [here](https://hackclub.nik-dev.eu/word-counter/)
+### Web Version
+
+1. Download the following files:
+   - `index.html`
+   - `style.css`
+   - `index.js`
+
+2. Open the `index.html` file in your web browser to use the web-based word counter.
+
+## 🌐 | Try it Online
+
+Alternatively, you can access the web version of the word counter [here](https://hackclub.nik-dev.eu/word-counter/).
+
+## 🖼️ | Screenshot
+
+![Screenshot](screenshot.jpeg)
 
 ## ✉️ | Questions
 
-If you have any questions you can contact me on Discord: @nikitafrfr
+If you have any questions, you can contact me on Discord: @nikitafrfr
 
 If you came here from the Hackclub Slack, you can just contact me there :)

@@ -1,13 +1,24 @@
-# 🌍 | Flag Guessing Game
+# 🚩 | Flag Guessing Game
 
-I created a Flag Guessing Game with the help of [this API](https://flagsapi.com/). The game shows you a flag and you have to guess the country.
+I created a Flag Guessing Game using [the FlagsAPI](https://flagsapi.com/). The game presents you with a flag, and your task is to guess the country.
 
-## 📡 | Deployment
+## ⚙️ | Installation
 
-The webpage is deployed with Github Pages and can be viewed [here](http://hackclub.nik-dev.eu/flag-game/). Have fun!
+To set up the game, download the following files:
+- `index.html`
+- `style.css`
+- `index.js`
 
-## ❓ | Questions
+## 🌐 | Try it Online
 
-If you have any questions please ask it in my DMs on the Hackclub Slack (where you probably came from) or add me on Discord: @nikitafrfr
+Alternatively, you can play the game [here](https://hackclub.nik-dev.eu/flag-game/).
 
-Thanks for reading!
+## 🖼️ | Screenshot
+
+![Screenshot](screenshot.png)
+
+## ✉️ | Questions
+
+If you have any questions, you can contact me on Discord: @nikitafrfr.
+
+If you came here from the Hackclub Slack, you can reach out to me there as well :)

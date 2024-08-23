@@ -1,13 +1,19 @@
-# 💾 | Sounds/Music Downloader (YouTube)
+# 🎵 | YouTube Sound/Music Downloader
 
-This project contains YouTube sound/music downloader written in Python. You can download a sound by providing its link or just entering the name.
+This project contains a YouTube sound/music downloader written in Python. It allows you to download audio by providing a YouTube link or by entering the name of the sound/music.
 
-## 💾 | Installation
+## ⚙️ | Installation
 
-To install this project, download the `main.py` file and run it. This project does require additional libraries: Download the `requirements.txt` file and run `pip install -r requirements.txt` in your console.
+1. **Dependencies:** Install the required Python packages using the `requirements.txt` file. (`pip install -r requirements.txt` in terminal)
+
+2. **Usage:** Run the `main.py` script to start the downloader. Follow the prompts to provide the YouTube link or enter the name of the sound/music you wish to download.
+
+## 🖼️ | Screenshot
+
+![Screenshot](screenshot.png)
 
 ## ✉️ | Questions
 
-If you have any questions you can contact me on Discord: @nikitafrfr
+If you have any questions, you can contact me on Discord: @nikitafrfr
 
 If you came here from the Hackclub Slack, you can just contact me there :)

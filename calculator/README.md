@@ -1,13 +1,17 @@
-# ➗ | Calculator
+# ➕ | Simple Calculator
 
-This projects contains a very simple calculator written in Python.
+This project includes a basic calculator implemented in Python. It can perform addition, subtraction, multiplication, and division. The calculator allows users to select an operation and input two numbers to receive a result.
 
-## 💾 | Installation
+## ⚙️ | Installation
 
-To install this project, just download the `calculator.py` file and run it. This project doesn't require any additional libraries.
+To use this calculator, download the `calculator.py` file. Run the `calculator.py` script to start using the calculator.
+
+## 🖼️ | Screenshot
+
+![Screenshot](screenshot.png)
 
 ## ✉️ | Questions
 
-If you have any questions you can contact me on Discord: @nikitafrfr
+If you have any questions, you can contact me on Discord: @nikitafrfr.
 
-If you came here from the Hackclub Slack, you can just contact me there :)
+If you came here from the Hackclub Slack, you can reach out to me there as well :)

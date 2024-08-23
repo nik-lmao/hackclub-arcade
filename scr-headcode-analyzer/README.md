@@ -1,22 +1,25 @@
-# 🗒️ | Stepford County Railway Headcode Analyzer
+# 🚂 | SCR Headcode Analyzer
 
-```
-SCR (Stepford County Railway) is a railway simulator game on Roblox. In the game, trains are assigned headcodes, which are 4-digit codes that represent the train's class and destination. This program will analyze a headcode and determine the train class and destination based on the code.
-```
+This project includes a tool for analyzing headcodes used in the SCR (Stepford County Railway) railway simulator on Roblox. The tool determines the train class and destination based on the 4-digit headcode.
 
-<br>
+## ⚙️ | Installation
 
-This folder contains a Stepford County Railway analyzer script (Python) and website (HTML, CSS & JS)
+1. **Web Page:**
+   - Download all the webpage files from the project.
+   - Open the `index.html` file in your web browser to use the headcode analyzer tool online.
 
-## 💾 | Installation
+2. **Python Script:**
+   - Ensure you have Python installed.
+   - Download the `main.py` file.
+   - Run the script directly using `python main.py`.
 
-To run the Python file, download it (`main.py`) and run it. The SCR Headcode analyzer doesn't need any additional libraries.
+## 🌐 | Try it Online
 
-To install this project, just download the `index.html`, `style.css` and `index.js` file. After open the project in your browser and take a look at it.
+You can access the web-based version of the SCR Headcode Analyzer [here](https://hackclub.nik-dev.eu/scr-headcode-analyzer/).
 
-<br>
+## 🖼️ | Screenshot
 
-Alternatively you can access the website [here](https://hackclub.nik-dev.eu/qr-code-reader/)
+![Screenshot](screenshot.png)
 
 ## ✉️ | Questions
 

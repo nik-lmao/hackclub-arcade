@@ -1,17 +1,26 @@
-# 🖥️ |  Password Generator
+# 🔐 | Password Generator
 
-This project contains a password generator.
+This project is a password generator that creates unique and secure passwords.
 
-## 💾 | Installation
+## ⚙️ | Installation
 
-To install this project, just download the `index.html`, `style.css` and `index.js` file. After open the project in your browser and take a look at it.
+To set up this password generator, download the following files:
+- `index.html`
+- `style.css`
+- `index.js`
 
-<br>
+Open the `index.html` file in your browser to start using the generator.
 
-Alternatively you can access the website [here](https://hackclub.nik-dev.eu/password-generator/)
+## 🌐 | Try it Online
+
+You can access the password generator [here](https://hackclub.nik-dev.eu/password-generator).
+
+## 🖼️ | Screenshot
+
+![Screenshot](screenshot.png)
 
 ## ✉️ | Questions
 
-If you have any questions you can contact me on Discord: @nikitafrfr
+If you have any questions, you can contact me on Discord: @nikitafrfr.
 
-If you came here from the Hackclub Slack, you can just contact me there :)
+If you came here from the Hackclub Slack, you can reach out to me there as well :)

@@ -1,17 +1,25 @@
-# 📑 | To-Do App (Website)
+# 🗒️ | To-Do App
 
-This project contains a to-do app website. You can save your to-do's and the website can store them in the local storage so your to-do's don't get lost on a page reload.
+This project is a simple To-Do application built with HTML, CSS, and JavaScript. It allows you to manage tasks by adding, viewing, removing, and marking tasks as completed.
 
-## 💾 | Installation
+## ⚙️ | Installation
 
-To install this project, just download the `index.html`, `style.css` and `index.js` file. After open the project in your browser and take a look at it.
+1. **Download the Files:**
+   - Download all the HTML, CSS, and JavaScript files from this repository.
 
-<br>
+2. **Open the App:**
+   - Open the `index.html` file in your web browser to start using the app.
 
-Alternatively you can access the website [here](https://hackclub.nik-dev.eu/todo-app/)
+## 🌐 | Try it Online
+
+You can try the To-Do app online by visiting [this link](https://hackclub.nik-dev.eu/todo-app/).
+
+## 🖼️ | Screenshot
+
+![Screenshot](screenshot.png)
 
 ## ✉️ | Questions
 
-If you have any questions you can contact me on Discord: @nikitafrfr
+If you have any questions, you can contact me on Discord: @nikitafrfr
 
 If you came here from the Hackclub Slack, you can just contact me there :)

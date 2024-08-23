@@ -1,17 +1,34 @@
-# 📓 | Guestbook Website (Front-end & Back-end)
+# 📖 | Guestbook Website
 
-This projects contains a guestbook website with a working API.
+This project features a guestbook website with a fully functional API. It includes both frontend and backend components.
 
-## 💾 | Installation
+## ⚙️ | Installation
 
-To install this project, just download the entire project folder. For the API, install all required modules with npm and run it by typing `node .` in the `api/` folder. You can open the website in the browser and access the API.
+To set up this project, follow these steps:
 
-<br>
+1. **Download Files:**
+   - From the main folder, download:
+     - `index.html`
+     - `style.css`
+     - `index.js`
+   - From the `backend/` folder, download all files, including `index.js`.
 
-Alternatively you can access the front-end of the guestbook app [here](https://hackclub.nik-dev.eu/guestbook/)
+2. **Install Dependencies:**
+   Navigate to the `backend/` folder in your terminal and run `npm install sqlite3 express` to install the required npm libraries.
+
+3. **Run the Backend:**
+   Start the backend server by running `node .` in the `backend/` folder.
+
+## 🌐 | Try it Online
+
+You can (only) view the guestbook website [here](https://hackclub.nik-dev.eu/guestbook/).
+
+## 🖼️ | Screenshot
+
+![Screenshot](screenshot.png)
 
 ## ✉️ | Questions
 
-If you have any questions you can contact me on Discord: @nikitafrfr
+If you have any questions, you can contact me on Discord: @nikitafrfr.
 
-If you came here from the Hackclub Slack, you can just contact me there :)
+If you came here from the Hackclub Slack, you can reach out to me there as well :)

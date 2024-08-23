@@ -18,3 +18,11 @@ import licsense_plates as lp
 print(lp.europe("F")) #France
 print(lp.germany("M")) # München
 ```
+
+## 🖼️ | Screenshot
+
+Screenshot of the `main.py` file which implements the license plates library:
+
+<br>
+
+![Screenshot](screenshot.png)

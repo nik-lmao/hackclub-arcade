@@ -1,13 +1,21 @@
-# 🎥 | Short Film Script
+# 🎬 | Short Film Scripts
 
-This project contains a short film script about two friends who want to meet each other but one dies (he got killed by dr. schluchtenscheißer)
+This project includes two versions of a short film script:
 
-<br>
+- **script-de.txt**: The script in German.
+- **script-en.txt**: The script in English.
 
-I'm currently not planning on filming and editing this short film. Maybe I'll do it in the future.
+The script revolves around Maximilian Saftsack, who discovers a disturbing scene at Nikita's house and encounters a sinister figure, Daniel Schluchtenscheißer, leading to a confrontation.
+
+**Note:** I haven’t managed to film this yet. Maybe I'll do it in the future.
+
+## 🖼️ | Screenshots
+
+![Screenshot](script-de.png)
+![Screenshot](script-en.png)
 
 ## ✉️ | Questions
 
-If you have any questions you can contact me on Discord: @nikitafrfr
+If you have any questions, you can contact me on Discord: @nikitafrfr
 
 If you came here from the Hackclub Slack, you can just contact me there :)

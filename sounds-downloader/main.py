@@ -17,6 +17,8 @@ def download_song(url):
         print(f"Downloaded {video.title} successfully!")
     except Exception as e:
         print(f"An error occurred: {str(e)}")
+    
+    input("Press enter to continue...")
 
 message = """
 Welcome to the YouTube Downloader!
