@@ -91,7 +91,7 @@ Screenshots of notes and the encryption table:
 <br>
 
 ![Screenshot](notes.jpeg)
-![Screenshot](table.png)
+![Screenshot](table.jpg)
 
 ## ❓ | Questions
 

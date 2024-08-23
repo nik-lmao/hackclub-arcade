@@ -10,7 +10,7 @@ This project features a simple web page for a ticket counter specifically design
 
 ## 🌐 | Try it Online
 
-Alternatively, you can try it out online [here](https://hackclub.nik-dev.eu/ticket-counter/) after installation.
+Alternatively, you can try it out online [here](https://hackclub.nik-dev.eu/ticket-counter/).
 
 ## 🖼️ | Screenshot
 
