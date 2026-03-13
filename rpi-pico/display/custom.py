@@ -32,7 +32,7 @@ def updateTime(line):
 lcd.clear()
 
 lcd.move_to(1, 0)
-lcd.putstr("Nikita Nikitin")
+lcd.putstr("Nikita's Pico")
 lcd.move_to(2, 1)
 lcd.putstr("gh @nik-lmao")
 
